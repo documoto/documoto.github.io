@@ -4,7 +4,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
-    <p><b>1.01345 (2021-06-03) Admin Center Bug Fix:</b> Fixed an issue where Publishers could not override Print Settings at the Media Level (enterprise-1009).</p>
+    <p><b>1.01355 (2021-06-16) Tenant-level Order Status and Recipient Editor:</b> You now have the ability to manage Tenant-level Order statuses and email recipient lists from within Admin Center > Storefront Admin > Order Statuses!  For additional information these new features in Rocket, refer to <a href="https://support.documoto.com/hc/en-us/articles/360037453834" target="_blank" rel="noopener noreferrer">How to Configure Order Statuses and Order Email Recipients</a> in our Support Center.</p>
+    <p><b>1.01355 (2021-06-16) Hotpoint Link Icon & Menu in BOMs:</b> Documoto now has the ability to visually indicate in BOMs when there are hotpoint links for items, and allow users to easily drill down to hotpoint link target content from the BOM. For additional information these new features in Rocket, refer to <a href="https://support.documoto.com/hc/en-us/articles/360037400753-How-to-Utilize-Hotpoints-and-Navigate-Hotpoint-Links" target="_blank" rel="noopener noreferrer">How to Utilize Hotpoints and Navigate Hotpoint Links</a> in our Support Center (enterprise-932).</p>
+    <p><b>1.01355 (2021-06-16) Storefront Bug Fixes:</b> Resolved the following defects:
+      <li>Parts not associated with Media but ordered into a cart were removed following cart submission (enterprise-1049).</li>
+      <li>Email confirmations for quote requests contained attachments that were errantly named "Order" instead of "Quote" (enterprise-1082).</li>
+      <li>Pricing totals were periodically being excluded from emailed Quote/Order PDF confirmations (enterprise-1081).</li></p>
+    <p><b>1.01355 (2021-06-16) Library Bug Fixes:</b> Resolved the following defects:
+      <li>Hotpoint link target page names were periodically the page being viewed instead of the page it is linked to (enterprise-941).</li>
+      <li>GetPartInfo requests for parts within books were not returning all available ERP-managed part data (enterprise-1070).</li>
+      <li>Updated API-based export processes to better detect incorrectly formatted requests and provide additional success/exception messaging (enterprise-741).</li></p>
+    <p><b>1.01355 (2021-06-16) Admin Center Bug Fixes:</b> Resolved the following defects:
+      <li>"Assembly" tags were not successfully saving to Table of Contents sub-chapters (enterprise-1057).</li>
+      <li>Sporadic older media data was unable to be successfully saved following changes being made (enterprise-1105).</li>
+      <li>Print settings for Parts Page header and BOM data was not being saved and applied correctly (enterprise-1108).</li></p>    <p><b>1.01345 (2021-06-03) Admin Center Bug Fix:</b> Fixed an issue where Publishers could not override Print Settings at the Media Level (enterprise-1009).</p>
     <p><b>1.01345 (2021-06-03) Print Setting Editor:</b> You now have the ability to manage Tenant and Organization Print Settings from within Admin Center > Content Admin!  For additional information these new features in Rocket, refer to <a href="https://support.documoto.com/hc/en-us/articles/360055352893#h_01ERN6K2SWD4C5MH0RR4RSCB3Y" target="_blank" rel="noopener noreferrer">Content Admin - Print Settings</a> in our Support Center.</p>    <p><b>1.01336 (2021-05-27) Reporting Bug Fix:</b> Fixed an issue where Documoto was not recording Chapter names, causing chapter names to not appear in the User Action Report (enterprise-897).</p>
     <p><b>1.01336 (2021-05-27) Library Bug Fix:</b> Fixed a defect where 'Create Assembly' caused the target hotpoint link page name to display incorrectly (enterprise-723).</p>
     <p><b>1.01336 (2021-05-27) Library Bug Fix:</b> Fixed a defect where the Build Hotpoint Links feature did not function properly when 2 or more pages had the same name. (enterprise-712).</p>
