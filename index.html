@@ -4,6 +4,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+    <p><b>1.01375 (2021-07-14) Organization-level Order Status and Recipient Editor:</b> You now have the ability to manage Organization-level Order statuses and email recipient lists from within Admin Center!  For additional information on these new features in Rocket, refer to the section titled “Overriding Order Email Recipients at the Organization Level“ of <a href="https://support.documoto.com/hc/en-us/articles/360037453834-How-to-Configure-Order-Statuses-and-Order-Email-Recipients" target="_blank" rel="noopener noreferrer">How to Configure Order Statuses and Order Email Recipients</a> in our Support Center.</p>
+    <p><b>1.01375 (2021-07-14) Background Processing/Queuing Improvements:</b> Implemented a new platform to manage and execute background processes for Publishing, Printing, Exporting and Indexing, providing improved stability and scalability for process-intensive requests.</p>
+    <p><b>1.01375 (2021-07-14) Language Translation Update:</b> An additional 500 phrases have been translated into Documoto’s supported languages and are now available in the system.  Additional phrase translations will be implemented in subsequent releases.</p>
+    <p><b>1.01375 (2021-07-14) Library Bug Fixes:</b> Resolved the following defects:
+      <li>PDF exports did not include all comments when configured in Print Settings and exported. (enterprise-991).</li>
+      <li>Search export included content that was not assigned to the user’s organization (enterprise-1092).</li>
+      <li>Exporting a large number of very large books in the same export request would fail (enterprise-1111).</li>
+      <li>Hotpoint link(s) were not showing link icon in BOM lists without page image having hotpoint(s) defined (enterprise-1135).</li>
+    </p>
+    <p><b>1.01375 (2021-07-14) Storefront Bug Fix:</b> Fixed an issue where values from ERP systems could become misaligned in PDF output (enterprise-1126).</p>
+    <p><b>1.01375 (2021-07-14) Admin Center Bug Fix:</b> Fixed an issue where the Save button in Table of Content editor would periodically become disabled and not allow saving of all changes made to a TOC (enterprise-1077).</p>
+    <p><b>1.01375 (2021-07-14) Document Publishing Bug Fix:</b> Fixed an issue where, when publishing from DocuStudio, reused part codes that use different names across multiple pages periodically overrode part code names in all pages where used. (enterprise-1095).</p>
     <p><b>1.01355.1 (2021-06-17) Shopping Cart Bug Fixes:</b> Resolved the following defects:
       <li>Shopping Cart users could not consistently export carts to CSV or XLSX (enterprise-1125).</li>
       <li>Shopping Cart users would occasionally receive -500 errors when trying to add items to a cart (enterprise-1124).</li>
