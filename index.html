@@ -4,6 +4,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+    <p><b>1.01402 (2021-08-05) New Shared Carts Feature:</b> You now have the option to create and distribute shopping carts in Documoto (enterprise-139 / enterprise-826)! For additional information on this new Documoto feature, refer to the following articles in the Support Center: <a href="https://support.documoto.com/hc/en-us/articles/1500005994521" target="_blank" rel="noopener noreferrer">How to Create and Manage Shared Carts</a> and <a href="https://support.documoto.com/hc/en-us/articles/1500009377042" target="_blank" rel="noopener noreferrer">Distributing Parts Lists for Wear and Spare Parts, Consumables and Recommended Maintenance.</a></p>
+    <p><b>1.01402 (2021-08-05) Integration & SSO URL Parameter Enhancements:</b> Documoto now supports the ability to refresh integration URL parameters within an active session and supports direct URLs to search results with SSO (enterprise-878).</p>
+    <p><b>1.01402 (2021-08-05) Library Bug Fixes:</b> Resolved the following defects: 
+        <li> Part location data was not adding to the cart from Page Part Info (enterprise-1087 / enterprise-1313)</li>
+        <li> ‘Add’ button is displaying in Order Suggestions for users that do not have access to the cart (enterprise-351)</li>
+        <li> Inconsistent quantity behavior in the cart when increasing or decreasing the quantity using the arrows (enterprise-963)</li>
+        <li> Redirect URL was failing to allow authentication (enterprise-1133)</li>
+        <li> Parts added to the cart were submitted, but removed from order or RFQ form after submission (enterprise-1280 / enterprise-1178)</li>
+    </p>
     <p><b>1.01383 (2021-07-21) Integration Bug Fix:</b> Fixed an issue where SOAP Services for  Publishing were failing in new queue processor (enterprise-1296).</p>
     <p><b>1.01375 (2021-07-14) Organization-level Order Status and Recipient Editor:</b> You now have the ability to manage Organization-level Order statuses and email recipient lists from within Admin Center!  For additional information on these new features in Rocket, refer to the section titled “Overriding Order Email Recipients at the Organization Level“ of <a href="https://support.documoto.com/hc/en-us/articles/360037453834-How-to-Configure-Order-Statuses-and-Order-Email-Recipients" target="_blank" rel="noopener noreferrer">How to Configure Order Statuses and Order Email Recipients</a> in our Support Center.</p>
     <p><b>1.01375 (2021-07-14) Background Processing/Queuing Improvements:</b> Implemented a new platform to manage and execute background processes for Publishing, Printing, Exporting and Indexing, providing improved stability and scalability for process-intensive requests.</p>
