@@ -4,6 +4,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+   <a href="https://support.documoto.com/hc/en-us/community/posts/20424731401619-1-02490-2023-09-06-What-s-New-" target="_blank" rel="noopener noreferrer"><b>1.02497 (2023-09-06)</b></a>
+   <p><b>Library and Admin Center Enhancement:</b> Enhanced Admin Media Info to allow specific media be designated to not permit being exported, downloaded, or printed, by setting “Prohibit Export/Download of Content” on the media.  When set to “Enable”, Library users will not be able to extract hard copies of the specific media.  Enhancements made to updateMedia REST endpoint to allow setting of the switch via API use (enterprise-1550, enterprise-2719, enterprise-2771).</p>
+   <p><b>Library Fix:</b> Fixed an issue where Order/Quote email fields required user to click “+” button in order to add an entered email address into an email field.  System will now automatically add valid email address values when user navigates away from email fields, including clicking the Submit button (enterprise-2895).</p>
+   <p><b>Admin Center Enhancements:</b> Made the following enhancements to Admin Center functionality:
+   <li>Added “Default Currency Symbol On” to Storefront Settings screen so Tenant administrators can set the value themselves, instead of requiring Documoto Services team to set the value for them (enterprise-2860).</li>
+   <li>Added “Ecommerce Use External Order Number” to Storefront Integration Settings screen so Tenant administrators can set the value themselves, instead of requiring Documoto Services team to set the value for them (enterprise-2859).</li>
+   </p>
+   <p><b>Integration Fix:</b> Fixed an issue for ERP Integrations where GetPartInfo calls were not consistently completing for large carts (enterprise-2929).</p>
+   <br>
+
    <a href="https://support.documoto.com/hc/en-us/community/posts/19383758061971-1-0xxxx-2023-08-09-What-s-New-" target="_blank" rel="noopener noreferrer"><b>1.02435 (2023-08-09)</b></a>
    <p><b>Publishing Enhancement:</b> Enhanced content publishing to allow deletion of Part translations as part of the process.  This is controlled by a new property available in System Settings titled “Delete Missing Translations on Publish?”.  If this is set to “Enable”, any parts with translations in Documoto but not in a page when publishing will have those missing translations deleted from Documoto.  Previously, these were bypassed and remained in Documoto.  For tenants leveraging the “Lock Translation on Publish” option, that functionality is not affected by these changes (enterprise-2605, enterprise-2811).</p>
    <p><b>Library and Admin Center Fix:</b> Fixed an issue affecting plural form of certain words in non-English translations for several languages (enterprise-2486, enterprise-2724).</p>
