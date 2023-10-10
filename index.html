@@ -4,6 +4,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+
+   <a href="https://support.documoto.com/hc/en-us/community/posts/21661153784851-1-02548-2023-10-09-What-s-New-" target="_blank" rel="noopener noreferrer"><b>1.02548 (2023-10-09)</b></a>
+   <p><b>Documoto Access Enhancement: </b>Introduced subdomained URL access to Documoto, allowing tenants to apply branding elements throughout the user experience, and supporting users ability to login to Documoto for different tenants at the same time via separate browser tabs.  For more information on these new capabilities, consult our KnowledgeBase page <a href="https://support.documoto.com/hc/en-us/sections/20959185628179-Subdomains" target="_blank" rel="noopener noreferrer"><b>Subdomains</b></a>.</p>
+   <p><b>Admin Center Updates:</b> Implemented the following updates to Admin Center functionality:
+   <li>Enhanced Admin Center/Tenant Settings screen to allow Tenant Administrators to set “User Password Expiration Days”, Lock Part Translations on Publish”, Export Page File Name as Hash Key” configuration settings for their Documoto environment (enterprise-2577).</li>
+   <li>Enhanced Tenant Admin Settings screen to allow Tenant Admin users to set/add their own Supplier data (enterprise-2846, enterprise-2896).</li>
+   <li>Enhanced Admin Center/Storefront Integrations screen to allow Tenant Administrators to set “Enable Ecommerce Order Management” configuration setting for their Documoto environment (enterprise-2901).</li>
+   <li>Fixed an issue where automatic expiration of user passwords did not function as expected.  Now, if Tenant Setting “User Password Expiration Days” is set, any user logging into Documoto with a password last reset more than the specified number of days in the past will be prompted to reset their password.  The new password may not match the previous one (enterprise-22).</li>
+   <li>Fixed an issue affecting users attempting to recover their password via Login page “Forgot Password” button, where the system did not redirect them back to the Login page after requesting to reset their password (enterprise-53).</li>
+   <li>Fixed an issue where Documoto Login Page periodically showed “Login SSO” button when tenant was not configured to use SSO logins (enterprise-618).</li>
+   <li>Fixed an issue affecting the ability to designate tags to be faceted, even if they had fewer than 1000 unique values (enterprise-1281).
+   <li>Fixed an issue where failed SSO logins could reveal undesirable information in the HTTP Response returned by the system (enterprise-2533).</li>
+   <li>Fixed an issue in Build Hotpoint Links where Build Hotpoint Links was not linking pages that are not in a chapter with parts in pages that are contained in a chapters in the same book (enterprise-2902).</li>
+   <li>Fixed an issue where Bulk Insert jobs could be submitted with no processing to be done, causing unexpected results in Job Manager (enterprise-2956).</li>
+   </p>
+   <p><b>Library Fix:</b> Fixed an issue where pinned filters were not consistently available for use when navigating through Browse Flow Search Results (enterprise-1595).</p>
+   <p><b>Job Manager Updates:</b> Implemented the following updates to Job Manager functionality:
+   <li>Enhanced Job Manager pre-defined job type filters to include additional job types for types “Export”, “Publisher” and “Update Index” (enterprise-2807).</li>
+   <li>Fixed an issue where exporting books would periodically show false error state upon successful completion of the export job (enterprise-1967).</li>
+   </p>
+   <p><b>Report Enhancements:</b> Implemented the following enhancements to reports for Microsite-related Media:
+   <li>Enhanced Comments Report to include Microsite media type when generating output with Type filter set to “All” or “Media” (enterprise-2873).</li>
+   <li>Enhanced Media Report to include Microsite media type when generating output with Type filter set to “Select All” or “Microsite” (enterprise-2873).</li>
+   <li>Enhanced Viewed News item Report to include the ability to report on Microsite Media data (enterprise-2873).</li>
+   </p>    
+   <br>
+    
    <a href="https://support.documoto.com/hc/en-us/community/posts/20424731401619-1-02490-2023-09-06-What-s-New-" target="_blank" rel="noopener noreferrer"><b>1.02497 (2023-09-06)</b></a>
    <p><b>Library and Admin Center Enhancement:</b> Enhanced Admin Media Info to allow specific media be designated to not permit being exported, downloaded, or printed, by setting “Prohibit Export/Download of Content” on the media.  When set to “Enable”, Library users will not be able to extract hard copies of the specific media.  Enhancements made to updateMedia REST endpoint to allow setting of the switch via API use (enterprise-1550, enterprise-2719, enterprise-2771).</p>
    <p><b>Library Fix:</b> Fixed an issue where Order/Quote email fields required user to click “+” button in order to add an entered email address into an email field.  System will now automatically add valid email address values when user navigates away from email fields, including clicking the Submit button (enterprise-2895).</p>
