@@ -4,7 +4,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
-   
+   <a href="https://support.documoto.com/hc/en-us/community/posts/22669751184275-1-02572-2023-11-08-What-s-New-" target="_blank" rel="noopener noreferrer"><b>1.02572 (2023-11-08)</b></a>
+   <p><b>Admin Center Fixes:</b> Implemented the following fixes to Admin Center functionality:
+   <li>Fixed issues where Tenant and Organization Styles editors were not responsive for tenants with a large volume of organizations (enterprise-386, 1098).</li>
+   <li>Fixed an issue where Organization-level ERP Settings did not revert to Tenant-level settings as expected (enterprise-1445).</li>
+   <li>Fixed an issue in Styles editors where logos were not showing as being inherited from higher level Style configurations (enterprise-1538).</li>
+   </p>
+   <p><b>Library Fix:</b> Fixed an issue where opening a single page outside the content of a book would periodically open the page within the context of a book (enterprise-926).</p>
+   <p><b>Exporter Fix:</b> Fixed an issue where particular media appeared to be available for Export but would show an error when attempting to export (enterprise-3007).</p>
+   <p><b>REST Endpoint Updates:</b> Implemented the following updates to REST endpoints and Swagger documentation:
+   <li>Updated Swagger documentation to clarify use of SVGOnly property in Page Export endpoint (enterprise-2979).</li>
+   <li>Fixed an issue in Media Search endpoint where using the correct format for a 4-character locale code was being returned as an error (enterprise-2654).</li>
+   <li>Fixed an issue in Page Export SVGOnly processing where the response contained more than just page SVG file (enterprise-2980).</li>
+   </p>
+   <p><b>Report Enhancement:</b> Added Order Detail Report, showing a list of orders and parts included in the orders. (enterprise-2966).</p>
+   <p><b>Maintenance Update:</b> Updated system translations.</p>
+   <br>
+    
    <p><b>1.02556 (2023-10-18)</b></p>
    <p><b>Login Processing Fix: </b>Fixed an issue where certain URL parameters were not being retained when logging into Documoto via SSO (enterprise-3028).</p>
    <p><b>Updated internal system components.</b></p>
