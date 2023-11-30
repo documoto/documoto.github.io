@@ -4,6 +4,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+   <a href="https://support.documoto.com/hc/en-us/community/posts/23551928247827-1-02594-2023-11-29-What-s-New-" target="_blank" rel="noopener noreferrer"><b>1.02594 (2023-11-29)</b></a>
+   <p><b>Admin Center Updates:</b> Implemented the following updates to Admin Center functionality:
+   <li>Enhanced Page Builder BOM Import to allow locking existing part translations on “Lookup” import.  With the new functionality, BOM Imports executed with Lookup allow a user to indicate the system to exclude incoming part translations with locales that ones that exist for the part in Page Builder BOM (enterprise-2816).</li>
+   <li>Fixed an issue in Page Builder BOM Import where Part Numbers could contain spaces at the start or end of the part number, leading to the system unexpectedly creating new parts (enterprise-2770).</li>
+   <li>Fixed an issue that caused Page Translation updates to occasionally fail when multiple pages used the same Page File Name (enterprise-3063).</li>
+   </p>
+   <p><b>Library Updates:</b> Implemented the following updates to Library functionality:
+   <li>Enhanced Cart Export capability to support emailing shopping cart contents (enterprise-2850).</li>
+   <li>Upgraded internal system components to fix an issue where Documoto PDF viewer occasionally did not show PDF images as expected (enterprise-3040).</li>
+   </p>
+   <p><b>Job Manager & SFTP Export Folders Update:</b> Reduced export, print and publish file retention to 7 days to minimize storage usage and cost for customers. Previously, Documoto retained printed and exported jobs for 30 days, resulting in temporary storage increases for customers. Job Manager will now only allow users to access Print, Export and Publish submitted in the past 7 days, and the SFTP Export and ToBePublished folders will only retain files 7 days old or less (enterprise-3002). </p>
+   <br>
+    
    <a href="https://support.documoto.com/hc/en-us/community/posts/22669751184275-1-02572-2023-11-08-What-s-New-" target="_blank" rel="noopener noreferrer"><b>1.02572 (2023-11-08)</b></a>
    <p><b>Admin Center Fixes:</b> Implemented the following fixes to Admin Center functionality:
    <li>Fixed issues where Tenant and Organization Styles editors were not responsive for tenants with a large volume of organizations (enterprise-386, 1098).</li>
