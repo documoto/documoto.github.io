@@ -4,6 +4,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+
+<a href="https://support.documoto.com/hc/en-us/community/posts/25365076915859" target="_blank" rel="noopener noreferrer"><b>1.02640 (2024-01-20)</b></a>
+   <p><b> Documoto Print Settings Enhancement:</b> Introduced a new Print Settings feature that allows Content Administrators to set the PDF Filename format for exported page, chapter and book content. Enabling this option for printed/exported content to export the filename as an identifier or translation name plus locale and timestamp. For more information on this new capability, please visit our Knowledge Base: <a href="https://support.documoto.com/hc/en-us/articles/25036020089619" target="_blank" rel="noopener noreferrer">How to Override the Filename for Printed Content </a>
+   <p><b>REST API Updates:</b> Implemented the following updates to Documoto REST functionality:
+   <li>Extended the POST /media/identifier/v1 endpoint to allow including soft-deleted media identifiers in the response (enterprise-3131).</li>
+   </p>
+   <p><b>Infrastructure Updates:</b> Updated the Documoto to account for the following upcoming web environment changes:
+   <li>Implemented a change to account for upcoming Chrome browser changes that could affect Documoto when embedded in an iFrame (enterprise-3184). For more information on the upcoming Chrome Browser changes, please see this article: <a href="https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct" target="_blank" rel="noopener noreferrer">Chrome Cookie Countdown </a></li>
+   <li>Implemented a change to support DMARC for outgoing emails coming from Documoto as a result of upcoming Google and Yahoo email updates.</li>
+   </p>
+    <br>
+    
    <p><b>1.02636 (2024-01-10)</b></p>
    <p><b>Library Update: </b>Fixed an issue where some users were encountering 404 errors when searching in the Documoto Library using subdomained URLs (enterprise-3200).</p>
    <br>
