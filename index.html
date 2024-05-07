@@ -5,6 +5,23 @@
   </head>
   <body>
 
+  <p><b>1.0.2804 (2024-05-06)</b></p>
+  <b>Documoto Library Enhancements:</b> New features have been released to the Documoto library:
+  <li>Document Viewer now has a <a href="https://support.documoto.com/hc/en-us/articles/29112136893587-How-to-Use-the-PDF-Viewer#h_01HX7BRNPAJ4GKSYTG66VFF5NW" target="_blank" rel="noopener noreferrer"><b>Full Screen</b></a> option, allowing users to view PDF type media and pages in fullscreen mode.</li>
+  <li>Library Part Viewer Where Used now includes the option to filter and sort the pages and books where a part belongs, making it easier to navigate and find specific compatibility information for a part.</li>
+  <li>Library Page Viewer Where Used now includes the option to filter and sort the books where a page belongs, making it easier to navigate and find specific compatibility information for a page.</li>
+  <b>General Library Updates:</b> Released the following updates for the Documoto Library:
+  <li>On mobile devices, the Account/Admin menu was being displayed behind the shopping cart items, making it inaccessible. This issue has been fixed and the menu now appears in front of the cart items. (enterprise-3674)</li>
+  <b>Rest API Updates:</b> Implemented the following updates to the Documoto REST Services:
+  <li>Deleting a tag value with the REST /tag/for-media-and-tag-values/v1 endpoint was properly deleting the value from the system, but the media was not being reindexed, causing the value to still appear in search. This has been addressed and deleted tag values are now also removed from search results. (enterprise-3599)</li>
+  <li>Implemented changes to address intermittent errors within the REST services (enterprise-3224)</li>
+  <b>Admin Center Updates:</b> Released the following updates for Admin Center:
+  <li>Validation in Page Builder was not showing missing hotpoints or translations. This issue has been resolved and validation now works as expected. (enterprise-3672)</li>
+  <li>The BOM import in Page Builder was disabling the save feature, both in the BOM editor and on navigation away. This issue has been resolved and users can now save the page with imported BOM changes. (enterprise-3690)</li>
+  <li>The filter applied in the Admin Center’s Content managers (Part, Page, Media) was being removed when navigating back using the Media button, but was retained when using the browser back button. This issue has been fixed and the filter is now consistently retained when navigating. (enterprise-3669)</li>
+  </p>
+  <br>
+
   <p><b>1.0.2768 (2024-04-16)</b></p>
   <b>Mobile Library Updates:</b> Implemented the following updates to Library functionality:
   <li>Fixed an issue where mobile users could not use the Quick-Add feature when using Safari (enterprise-3167)</li>
