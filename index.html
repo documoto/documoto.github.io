@@ -4,6 +4,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+    <p><b><a href="" target="_blak" rel="noopener noreferrer">1.0.3028</a>(2024-90-18)</b></p>
+    <p><b>Library Enhancements:</b></p>
+      <li>We've introduce an update allowing Parts Page BOMs to display without waiting for the Shopping Cart to load, in addition to a toast notification indicating slow load times when applicable. (enterprise-3960)</li>
+    <p><b>Admin Enhancements:</b></p>
+      <li>A new content upload progress feature has been implemented. Users will now see a progress bar during uploads, and navigation away from the page is prevented until the upload is complete. This improvement ensures that content is saved successfully before allowing users to leave the page. (enterprise-3978)</li>
+    <p><b>Item Details - Final Updates before GA!</b></p>
+      Item Details Page will be released for General Availability in October! We have made the following recent changes to this beta feature:
+          <li>Tabs within the Item Details page have been moved to cards, creating a seamless experience for users to view all information about parts, pages, chapters and media on one page without the need for additional clicks. (enterprise-3966)</li>
+          <li>The Item Details page has been updated for better mobile experience. On devices with screen widths of 640 pixels or less, the title is now hidden for most content types, except for Page Widgets where it remains visible. (enterprise-3954)</li>
+          <li>We've improved the handling of long content names in the Item Details page. The interface now better accommodates lengthy titles, preventing overlap with action buttons and improving overall readability. (enterprise-3876)</li>
+          <li>The Info and Back buttons on the Item Details page have been redesigned for improved user discovery. The Info button now includes "More Info" text, and the Back button has been updated to "Return to Viewer" with a new color scheme. (enterprise-3870)</li>
+          <li>The Info button for chapters, and media is now disabled when there is no additional information available. This helps users quickly identify which items have extra details to review. (enterprise-3782)</li>
+          <li>The Library now opens the new Item Details Page for a part when selecting a part from any location throughout the Library. (enterprise-3800)</li>
+
+    <p><b>Widgets Enhancements:</b></p>
+      <li>We've added the Home button previously seen in the Library to the Library Widget, providing users with a consistent search experience across different search bars. (enterprise-3974)</li>
+    <p><b>Bug Fixes:</b></p>
+      <li>We've implemented a change to attempt to address issues where orders are submitted with quantities equivalent to those of zip codes found on the order for.  This change prevents users from autofilling quantity fields with zip codes stored in their browser. (enterprise-3643)</li>
+      <li>We've resolved an issue where hotpoints were not displaying when opening a book from part search results. Users should now see hotpoints correctly without needing to refresh the page. (enterprise-4024)</li>
+      <li>The option to hide the banner image in the library has been extended to include browse flow pages and the Favorites page. Ensuring the full desire of control over the library experience. (enterprise-3982)</li>
+      <li>A bug where the tenant default search setting was not being honored has been fixed. The library will now correctly use the 'Exact' search setting when configured at the tenant level. (enterprise-3987)</li>
+    <br>
     <p><b><a href="https://bit.ly/4cHxITg" target="_blank" rel="noopener noreferrer">1.0.2959</a> (2024-08-21)</b></p>
     <p><b>Library Enhancements:</b></p>
 	    <li><b>New Home Button:</b> A prominent, intuitive and consistently visible “Home” button has been added to the header, allowing users to easily return to the Library Home Page from any location within the application. This new feature also clears the Documoto search bar when clicked, ensuring a fresh start for new searches.</li>
