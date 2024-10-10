@@ -4,6 +4,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+    <p><b>1.0.3067 (2024-10-09)</b></p>
+    <p><b>Major Update! Item Details GA:</b></p>
+      <li>The beta user group check has been removed from the NEW Item Details page, making it accessible to all users for parts, pages, chapters and media. Additionally, the tab-based view in Documoto library viewers has been eliminated, streamlining the user interface and improving overall navigation.</li>
+      <li><b>Fixed Order Suggestions Issue:</b> Resolved an issue where Order Suggestions were not consistently loading on the Item Details Screen after navigating between pages. (enterprise-4079)</li>
+      <li><b>Corrected Order Suggestions Labels:</b> The labeling in the Item Details ‘Order Suggestions’ card now accurately reflects custom ‘Suggestions’ labels set in the Admin Center. (enterprise-4080)</li>
+      <li><b>Widgets Suggestions:</b> Fixed an issue preventing Part Order Suggestions from loading on the Item Details Screen when navigating between pages within Widgets. (enterprise-3939)</li>
+    <p><b>Library Updates</b></p>ß
+      <li><b>Quick Add Feature:</b> Users can now add parts to the cart directly from non-interactive content using the new ‘Quick Add’ button with a shopping cart icon, allowing for seamless part search and addition. Admins can configure this setting via Admin Center > Content > Page (or) Media editor on a per Page/per Media basis. (enterprise-4037)</li>
+      <li><b>Error Toasts:</b> The error toast notification display duration in the Library has been increased from 4 to 10 seconds, and an “X” button has been added to close the toast. (enterprise-3991)</li>
+    <p><b>Admin Center Updates:</b></p>
+      <li><b>Custom Labels for Microsites:</b> Tenant Admins can now set custom labels for Microsites throughout the Documoto application, enhancing user experience with more meaningful terminology tailored to each tenant’s needs. (enterprise-3997)</li>
+      <li><b>Loading Indicator for Large PDFs:</b> A new Library Setting has been released which enables a loading indicator for large PDFs (over 50MB) in both the Documoto Library App and Widgets, displaying a progress bar and informative text. (enterprise-3970)</li>
+      <li><b>Error Toasts:</b> The error toast notification display duration in the Admin Center has been increased from 4 to 10 seconds, and an “X” button has been added to close the toast. (enterprise-3991)</li>
+    <p><b>Bug Fixes:</b></p>
+      <li><b>Banner Image Visibility Fix:</b> Fixed a problem where the banner image was only hidden for Administrators when the ‘Disable Library Banner Image’ setting was enabled. (enterprise-4078)</li>
+      <li><b>Cart Columns:</b> Fixed an issue preventing successfully saving Shopping Cart Column configurations. (enterprise-3993)</li>
+    <br> 
     <p><b><a href="https://bit.ly/47u5pXD" target="_blak" rel="noopener noreferrer">1.0.3028</a>(2024-09-18)</b></p>
     <p><b>Library Enhancements:</b></p>
       <li>We've introduce an update allowing Parts Page BOMs to display without waiting for the Shopping Cart to load, in addition to a toast notification indicating slow load times when applicable. (enterprise-3960)</li>
