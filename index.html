@@ -4,6 +4,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+    <p><b>1.0.3112 (2024-11-07)</b></p>
+    <p><b><a href="https://support.documoto.com/hc/en-us/categories/33608183765651-3D-Content" target="_blank" rel="noopener noreferrer">Major Update! 3D Part Thumbnails Launch:</a></b></p>
+    <li>The new 3D thumbnail feature in Documoto provides an interactive CAD model preview, enhancing the understanding of product components for end users. Content Administrators can easily import, preview, and manage 3D CAD models in the Admin Center, while end users can explore these dynamic models through rotation, slicing, and view options in the Library. This feature enriches the user experience by offering an intuitive, detailed view of parts. (Note: This feature is an add-on and may not be enabled for your tenant.)</li>
+    
+    <p><b>Library Updates:</b></p>
+    <li><b>Comments User Experience on Item Details Page:</b> The Comments Item Details UX in the Library has been improved by reducing the real estate of the Add Comment area. The comment box is now initially in an inactive state with instruction text, expanding when clicked. Additionally, the add comment input box has been moved to the bottom of the comments list, ensuring users can view already posted comments first.</li>
+    <li>Fixed a bug in filters on the search results page, where results would not return at all if a user was typing quickly in the filter field. (enterprise-4075)</li>
+    <li>Fixed a bug in the type-ahead functionality for filters and search results, ensuring that suggestions continue to display and update as users type, rather than stopping after encountering certain characters (like a dash or underscore). (enterprise-4115)</li>
+    <li>Fixed a bug that prevented users with 'Edit All' user group privileges from editing comments. Users with appropriate permissions can now add, edit, and delete comments as expected.</li>
+    
+    <p><b>Storefront Updates:</b></p>
+    <li><b>NEW Order Comments Feature:</b> Order Comments functionality has been introduced for Order Management. Users with appropriate privileges can now add comments when changing order status, providing important update information to order submitters. Comments are visible in the order history and included in status change emails from Documoto.</li>
+    <li><b>NEW Option to Return an Order to “Open” Status:</b> Order Management Approvers and Viewers now have the option to return an order to “Open” status, allowing the user that submitted the order to adjust their order as needed and resubmit. This feature is not supported for customers with cart submission integrations to their ERP, eCommerce, or other systems.</li>
+    <li><b>Quick Add from Static Content for SendItems Integrations:</b> The Quick Add to Cart feature has been extended to support SendItems integrations. Users in tenants with SendItems integration can now use Quick Add to Cart from static content, generating a SendItems event to add parts to the external cart.</li>
+    <li>Introduced a change to Admin Center > Storefront > Order/Quote Fields to disable the ‘Delete’ icon when an order form field cannot be deleted. (enterprise-3405)</li>
+    <li>A bug has been fixed where users with Organization Admin privileges but without Order Management privileges could edit their own order statuses. This issue has been resolved to ensure that only users with appropriate Order Management privileges (Viewer or Approver) can edit order statuses. (enterprise-124)</li>
+    
+    <p><b>Admin Center Updates:</b></p>
+    <li> The Upload Progress feature has been added to Tenant Print Settings, providing consistency with Media Print Settings. Users will now see progress bars when uploading files under Cover & Stitch Pages in the Admin Content Print Settings Layout. (enterprise-4054)</li>
+    <li>Fixed an issue where User Group Permissions for 'Disable Book Printing' were incorrectly disabling printing/exporting for all content. Users can now export/print chapters and parts pages when book printing is disabled. (enterprise-4131)</li>
+    <li>Resolved a problem where thumbnails were being converted to public attachments when replaced or deleted. Thumbnails are now properly disassociated without being moved to attachments. (enterprise-1510, 356, 653)</li>
+    <li>A bug in the Admin Page Editor has been resolved, allowing content files from 'Documoto Search' to successfully replace existing files for static pages. (enterprise-4105)</li>
+    
+    <p><b>Widget Updates:</b></p>
+    <li><b>Quick Add from Static Content for Widgets:</b> Quick Add functionality has been extended to non-interactive content in the “Library” type Widget, allowing users to add parts to the cart from static media and pages. This improves workflow efficiency by eliminating the need to manually note part numbers for later addition.</li>
+    <li>Addressed an issue that caused intermittent 'No Book Found' errors in Widgets search results. The search functionality has been stabilized to consistently return accurate results. (enterprise-4039)</li>
+    <li>Corrected a display issue in the Widget breadcrumb on tablet view (768px) where long titles were causing the search breadcrumb to be cut off. (enterprise-4044)</li>
+    <li>Fixed a bug in the Page Widget where the Page Title was not displaying on screens with a resolution of 640 pixels or less. (enterprise-4064)</li>
+    <li>Addressed an issue with the Book Widget's Related Content display in Item Details. The Related Content box was previously inconsistent in its appearance. This fix ensures a more reliable and consistent display of related content. (enterprise-4070)</li>
+<br>
+
     <p><b><a href="https://bit.ly/3U3RIZW" target="_blak" rel="noopener noreferrer">1.0.3067</a> (2024-10-09)</b></p>
     <p><b>Major Update! Item Details GA:</b></p>
       <li>The beta user group check has been removed from the NEW Item Details page, making it accessible to all users for parts, pages, chapters and media. Additionally, the tab-based view in Documoto library viewers has been eliminated, streamlining the user interface and improving overall navigation.</li>
