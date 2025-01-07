@@ -4,6 +4,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+    <p><b><a href="https://bit.ly/4j3umys" target="_blank" rel="noopener noreferrer">1.0.3220</a> (2025-01-06)</b></p>
+    <p><b>Major Updates!</b></p>
+    <p><b><a href="https://support.documoto.com/hc/en-us/articles/34424237572243-Contextual-Search-Bar-Enhancements-Key-Improvements-Impacts-of-Library-Admin-Center-REST-Web-Services" target="_blank" rel="noopener noreferrer">Contextual Search Bar and Search Refinements Launch:</a></b></p>
+    <li>The Contextual Search Bar is now available in the Library and Library Widget! The old search bar has been removed.</li>
+    <ul>
+        <li>The search bar has been extended to show more results at once.</li>
+        <li>The ‘Go to Search’ button has been removed from the Library banner image.</li>
+        <li>The tooltip with searching tips has been removed for simplicity.</li>
+        <li>Users can filter results to show only exact matches using the new “Show Only Exact Matches” feature in lieu of the Exact vs Contains drop-down.</li>
+        <li>Deep search into books and pages has been removed from Search Results.</li>
+        <li>Search queries no longer look for content within Book type media or Parts Page type pages when searching for content.</li>
+    </ul>
+    <li>Contextual Search bar activities (e.g., zero-result searches and click-through events from the contextual search bar) are now recorded in the Search Log report, including search terms, result counts, and content details.</li>
+    
+    <p><b><a href="https://support.documoto.com/hc/en-us/articles/36813698302867" target="_blank" rel="noopener noreferrer">Part Item Details Equipment Verification Banner:</a></b></p>
+    <li>A new banner has been added to the Part Item Details page when viewing a part outside of a page or book. This banner prompts users to confirm part compatibility before adding items to the cart.</li>
+    <li>The banner includes a 'View Where Used' button that directs users to Where Used on the Item Details page.</li>
+    
+    <p><b><a href="https://support.documoto.com/hc/en-us/categories/33608183765651-3D-Content" target="_blank" rel="noopener noreferrer">3D Thumbnails and 2D Lightbox Viewer in Widgets:</a></b></p>
+    <li>Users can now view 3D thumbnails in Page, Book, and Library Widgets.</li>
+    <li>The 2D Lightbox Viewer has also been added to Part Item Details.</li>
+    
+    <p><b>Server-Side Rendering for PDFs</b></p>
+    <li>A new server-side rendering system for PDFs and documents has been implemented, allowing faster display of PDFs, especially for larger files.</li>
+    <li>Documents exceeding 250 MB in size will no longer open directly within Documoto. Instead, users will see a “Click to Download” option for these files.</li>
+    <li>The large PDF downloading indicator has been removed from Admin Center, Widgets, and Library, reflecting the improved handling capabilities of server-side rendering.</li>
+    
+    <p><b><a href="https://support.documoto.com/hc/en-us/articles/360036761854-Supported-File-Extensions-by-Media-Type" target="_blank" rel="noopener noreferrer">Office File Viewing and Searching in the Library App and Widgets:</a></b></p>
+    <li>You can now open Office files (e.g., Word, Excel, PowerPoint) directly in the Library App and Widgets without downloading them.</li>
+    <li>Supported file types include DOC, DOCX, XLS, XLSX, PPT, PPTX, and RTF. Files display in an easy-to-read viewer.</li>
+    <li>You can also search the text inside Office files to find what you need more quickly. This feature is available in both the Library and Widgets.</li>
+    
+    <p><b>Other Library Updates:</b></p>
+    <li><b>Loading Indicator Added Across Library and Widgets:</b> A spinning gear loading indicator now appears in the Documoto Library and Widgets when a page takes longer than usual to load. This helps users know that the page is still loading.</li>
+    <li><b>Library Account Drop-Down Update:</b> The “Submit Feedback” Button, which routes users to the Documoto Feedback Forum, has been hidden for non-Admin and non-Publisher users.</li>
+    <li><b>New Customizable Library Labels:</b> Admins can now rename additional Library system labels including ‘More Info,’ ‘Type,’ and ‘Categories.’</li>
+    <li><b>Improved Library Filter Names:</b> Filters for media now use clearer system labels:</li>
+    <ul>
+        <li>‘Identifier’ → ‘Media Identifier’</li>
+        <li>‘Name’ → ‘Media Name’</li>
+        <li>‘Description’ → ‘Media Description’</li>
+    </ul>
+    
+    <p><b>Key Defect Fixes:</b></p>
+    <li><b>Widget Locale Bug:</b> Widgets now honor the language set in their configuration for consistent display. (enterprise-4192)</li>
+    <li><b>Thumbnail Override Defect Fix:</b> Custom thumbnails will no longer be replaced when updating source files. (enterprise-685)</li>
+    <li><b>SSO Translations Issue:</b> Language preferences set after logging in with SSO now apply to all fields. (enterprise-4094)</li>
+    <li>Dozens of other defects were addressed in this release. Contact Support or your Customer Success Manager for more details.</li>
+<br>
+
     <p><b><a href="https://bit.ly/40xs7MZ" target="_blank" rel="noopener noreferrer">1.0.3112</a> (2024-11-07)</b></p>
     <p><b><a href="https://support.documoto.com/hc/en-us/categories/33608183765651-3D-Content" target="_blank" rel="noopener noreferrer">Major Update! 3D Part Thumbnails Launch:</a></b></p>
     <li>The new 3D thumbnail feature in Documoto provides an interactive CAD model preview, enhancing the understanding of product components for end users. Content Administrators can easily import, preview, and manage 3D CAD models in the Admin Center, while end users can explore these dynamic models through rotation, slicing, and view options in the Library. This feature enriches the user experience by offering an intuitive, detailed view of parts. (Note: This feature is an add-on and may not be enabled for your tenant.)</li>
