@@ -4,6 +4,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+    <p><b><a href="https://bit.ly/40BoTGz" target="_blank" rel="noopener noreferrer">1.0.3235</a> (2025-01-29)</b></p>
+    <p><b>Library Updates:</b></p>
+    <li><b>Where Used Search & Filter By Tags:</b> The Where Used feature now allows users to search and filter by media and page tags. This makes it easier to find books and pages that are tagged with serial numbers, model numbers, and assembly numbers that may not be listed in the content name or identifier.</li>
+     <p><b>Storefront Updates:</b></p>
+    <li><b>NEW Cart Export Email Button:</b> The Cart Export feature now has a simple "Email" button in the shopping cart. Users can email shopping carts, pick an export format, add a subject and comments, and even include their own email for reference. This makes sending cart information easier and clearer.</li>
+    <p><b>Admin Center Updates:</b></p>
+    <li><b>Media Timestamp Updates:</b> Media and Template objects in Documoto now have better timestamp accuracy. Updates to media and template attributes like translations, tags, or thumbnails will now update the timestamp and version for better change tracking.</li>
+    <li><b>Page Timestamp Updates:</b> Updates to page attributes like translations, tags, or illustrations will now update the timestamp and version for better tracking.</li>
+    <li><b>Part Timestamp Updates:</b> Timestamp and version updates are now applied when part attributes such as pricing, tags, thumbnails, or translations are updated. This improvement enhances how part modifications are tracked.</li>
+    <li><b>Consistent Updated Dates:</b> "Updated" dates for content objects across Documoto, appearing in the Library App, Widgets, and Admin Center, are now accurate and consistent for all users.</li>
+     <p><b>Data Insights Updates:</b></p>
+    <li><b>Widget Name in Reports:</b> Data Insights reports now display Widget names instead of system-generated usernames. This update applies to reports such as Weekly User Actions, Login Sessions, and User Search Logs, providing clearer and more meaningful insights about Widget activity.</li>
+    <p><b>Web Services Update:</b></p>
+    <li><b>NEW Add Parts Endpoint:</b> A new REST POST endpoint has been added to let users create parts automatically via the Headless Publisher API. With this, users can programmatically add part details like part number, supplier key, unit of measure, and translations. Publisher permissions are required, and all submitted data is checked for errors.</li>
+    <p><b>Bug Fixes:</b></p>
+    <li><b>"View All Results" Fix</b> The "View All Results" button in the search bar now clears filters as expected, ensuring users see all relevant results. (enterprise-4298)</li>
+    <li><b>Search Label Translations Fix</b> The "Show Only Exact Matches" label in the search bar is now properly translated into all supported languages, fixing a previous issue where it only appeared in English. (enterprise-4292)</li>
+    <li><b>Cart Column Settings Bug</b> Fixed an issue where changes to Organization Cart Column settings would not save or revert correctly. Admins can now adjust and save these settings without issues. (enterprise-3938)</li>
+    <li><b>Disable Book Printing Setting Issue</b> The "Disable Book Printing" group setting now works correctly. It disables printing entire books while still allowing printing of individual chapters or pages. (enterprise-4294)</li>
+    <li><b>Storefront Currency Code Fix</b> Fixed a bug that prevented users from switching currency codes in Storefront settings. Both Tenant and Organizations can now easily adjust their currency codes as needed. (enterprise-4122)</li>
+<br>
+	  
     <p><b><a href="https://bit.ly/4j3umys" target="_blank" rel="noopener noreferrer">1.0.3220</a> (2025-01-06)</b></p>
     <p><b>Major Updates!</b></p>
     <p><b><a href="https://support.documoto.com/hc/en-us/articles/34424237572243-Contextual-Search-Bar-Enhancements-Key-Improvements-Impacts-of-Library-Admin-Center-REST-Web-Services" target="_blank" rel="noopener noreferrer">Contextual Search Bar and Search Refinements Launch:</a></b></p>
