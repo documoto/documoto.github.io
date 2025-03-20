@@ -4,6 +4,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+	  <p><b>1.0.3316</a> (2025-03-19)</b></p>
+	  <p><b>Widget Updates:</b></p>
+	  <li><b>Library Widget Deep Linking to Browse Flow Locations:</b> Developers can now open the Library Widget directly to a specific browse flow location. By specifying a browseFlowNodeId in the widget configuration, the Library Widget will open at the chosen node, making it easier to guide users to relevant content.</li>
+	  <p><b>Print Settings Updates:</b></p>
+	  <li><b>New Print Setting: Crop White Space on Images:</b> Content Admins can now enable a new print setting which crops extra white space from diagrams. This setting cannot be enabled if "Print Hotpoints on Images" is enabled, but can be used in combination with the "Rotate Images Automatically" print setting to allow a diagram to use the maximum possible space in printed content.</li>
+	  <p><b>Data Insights Updates:</b></p>
+	  <li><b><a href="https://support.documoto.com/hc/en-us/articles/39500030281875" target="_blank">NEW Orphaned Part Report:</a></b> The Orphaned Part Report is now available for use to identify orphaned parts. For more information, please refer to Orphaned Part Report in the Support Center.</li>
+	  <li><b><a href="https://support.documoto.com/hc/en-us/articles/39499857585683" target="_blank">NEW Part Tag Report:</a></b> TThe Part Tag Report is now available for use to track part tags. For more information, please refer to Part Tag Report the Support Center.</li>
+	  <li><b>Part Report Updates:</b> The Part Report no longer includes tag data. To find part tag information, use the Part Tag Report and Page Part Tag Report instead.</li>
+	  <p><b>Other Updates:</b></p>
+	  <li>Users can now include special characters in Order Status comments without encountering errors. Previously, attempting to save a comment with characters like % or () caused a 500 error in the UI (enterprise-4368).</li>
+	  <li>Resolved a defect where extremely limited content failed to index due to false result errors (enterprise-4350).</li>
+	  <li>Updated behavior for the "Updated Media Timestamp on Access Controls Change" tenant setting to only update timestamps when media categories change and NOT when organizations change (enterprise-4369).)</li>
+	  <li>Content Admins will now receive a warning when uploading documents that exceed 250 MB, ensuring they are aware of size limitations when adding files that cannot be viewed in-app in Documoto (enterprise-4217).</li>
+<br>    
 	  <p><b><a href="https://bit.ly/3QBVaZr" target="_blank" rel="noopener noreferrer">1.0.3280</a> (2025-02-26)</b></p>
 	  <p><b>Library Updates:</b></p>
 	  <li><b><a href="https://support.documoto.com/hc/en-us/articles/38855877590419-How-to-Utilize-Where-Used-in-the-Search-Bar" target="_blank">NEW "Where Used" Button in Search Bar:</a></b> The search bar now includes a “Where Used” button next to part and page search results. This button allows users to quickly find where a part or page is used, without extra clicks or scrolling. The button also shows a count of how many places the item is used.</li>
