@@ -7,14 +7,14 @@
 	<p><b>1.0.3333</b> (2025-04-09)</p>
 	<p><b>Admin Center Updates:</b></p>
 	<li><b><a href="https://support.documoto.com/hc/en-us/articles/40183600242707-How-to-Send-a-User-Verification-Email" target="_blank" rel="noopener noreferrer">NEW Secure Password Setup Emails for Users:</a></b> Admins can now send a password setup verification email when creating or editing users, so users can set their own passwords. This helps improve security and reduce password sharing via insecure methods.
-	<li>→ Choose to manually set a password or send a verification email when initially setting up a user.</li>
-	<li>→ Users can't log in until they follow the email link to set their password.</li>
-	<li>→ Admins can resend verification emails to request the user reset their password at anytime.</li>
-	<li>→ Users cannot reuse their prior password when setting a new password via the Admin submitted reverification email, or "Forgot Password" options. The "Forgot Password" feature remains available for the user as well.</li>
-	<li>NOTE: Documoto REST APIs do not yet support using this feature for new users. We will be working to introduce new User CRUD endpoints in Q2 to allow leveraging this feature in an automated fashion.</li>
+	<br> → Choose to manually set a password or send a verification email when initially setting up a user.
+	<br> → Users can't log in until they follow the email link to set their password.
+	<br> → Admins can resend verification emails to request the user reset their password at anytime.
+	<br> → Users cannot reuse their prior password when setting a new password via the Admin submitted reverification email, or "Forgot Password" options. The "Forgot Password" feature remains available for the user as well.
+	<br> NOTE: Documoto REST APIs do not yet support using this feature for new users. We will be working to introduce new User CRUD endpoints in Q2 to allow leveraging this feature in an automated fashion.
 	<li><b>NEW Password Verification Custom Email Subject and Message:</b> Tenant Admins can also customize the subject line and message body for user password setup emails.
-	<li>→ Add a custom message before the "Set Password" link.
-	NOTE: Localization of the email subject and body are not supported as part of the initial release of this feature.</li>
+	<br> → Add a custom message before the "Set Password" link.
+	<br> NOTE: Localization of the email subject and body are not supported as part of the initial release of this feature.</li>
 	<p><b>Library Updates:</b></p>
 	<li><b>3D Image Fallback:</b> Documoto now displays a 3D thumbnail anywhere a 2D thumbnail is missing for parts that have a 3D model applied. This update improves visual identification of parts across the platform. When a 2D thumbnail is not applied to a part, 3D thumbnails now appear in the search bar suggestions, search results, Part Item Details, Shopping Cart, and in Admin Center. The GET /library/parts/v1/{id}/thumbnails API also now returns the 3D thumbnail if no 2D thumbnail is available.</li>
 	<p><b>Print Settings Updates:</b></p>
