@@ -4,7 +4,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
-	  
+
+	  <p><b>1.0.3401</b> (2025-05-21)</p>
+		<p><b>Library Updates:</b></p>
+		<li><b><a href="https://support.documoto.com/hc/en-us/articles/41427683550099-How-to-Configure-the-Announcements-Bar" target="_blank" rel="noopener noreferrer">NEW Announcements Feature:</a></b> Admins can now create and manage announcements that appear in the Library App and Widgets. This feature helps keep users informed about important updates while they browse.
+		<br> → Configure message text, style, link actions, and visibility by organization.
+		<br> → Preview announcement styling before publishing.
+		<br> → Available under Admin Center > Library > Announcements for Tenant Admins.</li>
+		<li><b>Improved Item Details Page for Related Media and Attachments:</b> The Item Details page now clearly separates Attachments from Related Media. Related Media also includes several usability improvements, including:
+		<br> → Infinite scrolling replaces pagination for easier browsing.
+		<br> → A search bar allows filtering by Related Media name or identifier.
+		<br> → A new "Open in New Tab" action makes it easier to view related content without losing your place.</li>
+		<li>Resolved a defect where the "Show Only Exact Matches" setting was not applied when opening search results in a new tab using a direct URL. Filters now apply as expected (enterprise-4419).</li>
+
+		<p><b>Admin Center Updates:</b></p>
+		<li><b>More Control Over 3D Viewer Tools and Default Views:</b> Content Admins can now customize how users interact with 3D models in the Library and Widgets.
+		<br> → Enable or disable individual 3D viewer tools like Explode, Slice, Draw Mode, and others. All tools are enabled by default.
+		<br> → Set a custom default view for each part — zoom and rotation can be saved as the model's starting view using the new "Set as Default View" option.</li>
+		<li>Resolved an issue where valid JT files failed to upload in the 3D Tools section of the Part Editor. These files now process and convert successfully (enterprise-4353).</li>
+
+		<p><b>Data Insights Updates:</b></p>
+		<li><b>NEW Data Insight Reports – Export Activity:</b> Three new reports are now available to help monitor user export (print) activity in Documoto. These support Data Loss Prevention (DLP) efforts by providing insight into what content users are exporting:
+		<br> → Page Export Report
+		<br> → Chapter Export Report
+		<br> → Media Export Report</li>
+<br>
 	<p><b>1.0.3349</b> (2025-04-30)</p>
 	<li><b>Cleaner Item Details Pages:</b> Empty cards like Details, Related, and Order Suggestions are now hidden on the Item Details page to reduce clutter and highlight available information. This behavior is <b>on by default</b>, but admins can adjust this and re-enable empty cards in Admin Center > Library > Library Settings > Item Details.</li>
 	<li>Resolved an issue where uploading a PLZ for a previously deleted page would update the deleted version and would not show in Page Manager. Now, republishing a previously deleted page will correctly create a new, visible version in Page Manager (enterprise-4312).</li>
@@ -27,7 +51,6 @@
 	<li>Fixed an issue where adjusting column widths in print settings caused the total width calculation to exceed 100, even when input pixel values were under 100% in total. This issue prevented users from saving changes. Column widths can now be adjusted and saved as expected. (enterprise-4387)</li>
 	<li>Resolved a defect where enabling the "Crop White Space on Images" print setting caused image line weights to appear too light, making exploded views and callouts difficult to see. Cropped images now retain appropriate contrast and clarity in printed content. (enterprise-4388)</li>
 <br>
-	  
 	  <p><b>1.0.3316</a> (2025-03-19)</b></p>
 	  <p><b>Widget Updates:</b></p>
 	  <li><b>Library Widget Deep Linking to Browse Flow Locations:</b> Developers can now open the Library Widget directly to a specific browse flow location. By specifying a browseFlowNodeId in the widget configuration, the Library Widget will open at the chosen node, making it easier to guide users to relevant content.</li>
@@ -41,8 +64,7 @@
 	  <li>Users can now include special characters in Order Status comments without encountering errors. Previously, attempting to save a comment with characters like % or () caused a 500 error in the UI (enterprise-4368).</li>
 	  <li>Resolved a defect where extremely limited content failed to index due to false result errors (enterprise-4350).</li>
 	  <li>Updated behavior for the "Updated Media Timestamp on Access Controls Change" tenant setting to only update timestamps when media categories change and NOT when organizations change (enterprise-4369).)</li>
-	  <li>Content Admins will now receive a warning when uploading documents that exceed 250 MB, ensuring they are aware of size limitations when adding files that cannot be viewed in-app in Documoto (enterprise-4217).</li>
-<br>    
+	  <li>Content Admins will now receive a warning when uploading documents that exceed 250 MB, ensuring they are aware of size limitations when adding files that cannot be viewed in-app in Documoto (enterprise-4217).</li><br>    
 	  <p><b><a href="https://bit.ly/3QBVaZr" target="_blank" rel="noopener noreferrer">1.0.3280</a> (2025-02-26)</b></p>
 	  <p><b>Library Updates:</b></p>
 	  <li><b><a href="https://support.documoto.com/hc/en-us/articles/38855877590419-How-to-Utilize-Where-Used-in-the-Search-Bar" target="_blank">NEW "Where Used" Button in Search Bar:</a></b> The search bar now includes a “Where Used” button next to part and page search results. This button allows users to quickly find where a part or page is used, without extra clicks or scrolling. The button also shows a count of how many places the item is used.</li>
