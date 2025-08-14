@@ -4,6 +4,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+	  <p><b>1.0.3492</b> (2025-08-13)</p>
+
+		<p><b>NEW MAJOR FEATURE: 3D Illustrations – Early Access</b></p>
+		<li>The first release of 3D Illustrations in Documoto delivers an end-to-end workflow for bringing interactive 3D CAD models into your parts pages. This release enables Publishers to import 3D models, map them to BOMs, and publish 3D-enabled pages, while Library users can explore assemblies interactively.</li>
+		<li>→ Import & Preview 3D Models in Page Builder: Upload a 3D CAD model directly to a parts page draft and preview it before mapping to a BOM.</li>
+		<li>→ Map BOM to 3D Model PMI for Interactivity: Use regex-based mapping to connect BOM part numbers to 3D CAD model object properties, enabling bidirectional highlighting between BOM rows and 3D model components.</li>
+		<li>→ Publish with 3D Model & BOM Mapping: Publish draft pages containing mapped 3D models so Library users can view interactive assemblies.</li>
+		<li>→ 3D Access from Admin & Library: Access 3D model views directly from Page Viewer in both Admin Center and Library.</li>
+		<li>→ Interactive 3D Viewer: Users can select components in the 3D model to highlight BOM rows, and vice versa, making it easier to identify parts and order them.</li>
+		<li>→ Mobile Support: 3D models can be opened and used on mobile devices in the Library.</li>
+		<li>→ A limited free tier allows publisher users to publish a small number of 3D-enabled pages before upgrading to a paid tier.</li>
+
+		<p><b>Library Updates:</b></p>
+		<li><b>Attachment Label Customization:</b> Admins can now create a custom label for attachments—such as changing "Attachments" to "Notes"—which is reflected in both the Library and Admin Center.</li>
+		<li>Fixed an issue where logging in via /api/redirect URLs returned HTTP 500 instead of opening the linked item when parameters were valid. (enterprise-4547)</li>
+
+		<p><b>Admin Center Updates:</b></p>
+		<li><b>Superseded Part Number Checks in Page Builder:</b> Page Builder now detects when a BOM part number exists as a "SupersededPartNumber" tag on other parts, preventing accidental reuse of outdated part numbers. A visual pill indicator flags superseded matches.</li>
+		<li>Fixed various Product Page related defects such as delete operations now respect the exact number of selected associations and entity selector modal "Select All" limit matches the limit in the grid view and selection buttons in the modal now display the count of selected items. The "More Info" button in the Library Widget is now enabled when a media item has an associated product page but no other detail sections. (enterprise-4522)</li>
+		<li>Prevented publishing errors due to existing parts recognized as new by adding a backend verification step on publishing and by improving behavior so that existing parts typed into the BOM are recognized as existing and can be selected from the dropdown. (enterprise-4533)</li>
+<br>
+
 	  <p><b>1.0.3474</b> (2025-07-28)</p>
 		<li>Fixed an issue where Publishers couldn't properly set access controls on Media and Product Pages and aligned Announcement Bar access controls to Tenant Admin users (enterprise-4527)</li>
 <br>
