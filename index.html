@@ -4,6 +4,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+	  <p><b>1.0.3511</b> (2025-09-04)</p>
+
+	  <p><b><a href="https://support.documoto.com/knowledge-base/how-to-use-ai-powered-search" target="_blank" rel="noopener noreferrer">NEW MAJOR FEATURE: AI-Powered Search for PDFs in the Documoto Library – Early Access</a></b></p>
+		<li>We’re excited to introduce an AI-Powered Search feature that makes interacting with PDF documents in the Documoto Library smarter and more efficient. We encourage users to try it out and provide feedback.</li>
+		<li>→ Ask Questions in Natural Language: Users can ask single-shot queries like “How do I repair this [part description]?” directly against a PDF.</li>
+		<li>→ Summarize Documents: Users can request concise summaries of entire PDFs.</li>
+		<li>→ Localized Responses: When questions are asked in a specific language, the chatbot responds in that same language.</li>
+		<li>→ Feedback & Logging for Admins: Admins can capture thumbs up/down ratings and reasons for negative feedback to monitor answer quality, identify issues, and refine content strategies. <b>Note:</b> Reporting and analytics on this feedback are not available in this Early Access release.</li>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Item Details Page enhancements:</b></li>
+		<li>→ Removed display of created/updated timestamps to reduce noise and improve clarity.</li>
+		<li>→ Pricing, availability, and ERP-integrated information (like lead times) are emphasized for easier decision-making at Item Details Page.</li>
+		<li>→ Added an ability to display supplier key in Part Info, supporting use cases such as transit authorities needing to understand OEM applicability.</li>
+		<li>Fixed an issue where URLs with SSO parameters caused Documoto to hang. Users can now authenticate smoothly. (enterprise-4563)</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b><a href="https://support.documoto.com/knowledge-base/how-to-provide-product-feedback" target="_blank" rel="noopener noreferrer">In-App Feedback Forum Integration:</a></b> Admins can now access an in-app Submit Feedback page that embeds the forum widget with Single Sign-On (SSO).</li>
+		<li>→ Open the forum from Admin Center without needing to log in separately.</li>
+		<li>→ View, post, vote, comment, and search within the in-app forum without switching contexts.</li>
+		<li>This integration makes it easier to gather and manage user feedback, prioritization, and community engagement.</li>
+		<li><b>Configurable Help Options:</b></li>
+		<li>→ Admins can now manage visibility of the “Help” link in the Library and Account dropdown menus.</li>
+		<li>→ Admin users only can see the “Documoto Support Center” link.</li>
+		<li>→ All users continue to see a tenant-specific “Help” link if the default URL is overridden.</li>
+		<li>Resolved a defect with Draft Publishing Timestamps updates: Publishing page drafts now updates “last updated” timestamps consistently across pages and parts. (enterprise-4525)</li>
+		<li>Fixed an issue with 3D Thumbnails on Parts Pages: Publishing pages with 3D models but no 2D illustrations now correctly generates a 3D thumbnail PNG. (enterprise-4512)</li>
+
+		<p><b>REST Api Updates:</b></p>
+		<li><b>Headless Storefront:</b></li>
+		<li>→ GET Order Details: Retrieve details of a specific order by its ID for reporting, support, or auditing.</li>
+		<li>→ PUT Order Status: Update the status of an existing customer order (e.g., approve, reject, cancel, ship) programmatically.</li>
+		<li><b>Headless Publisher:</b></li>  
+		<li>→ GET Media Info: existing endpoint enhanced – it now includes additional metadata fields without introducing breaking changes: “externalUrl” and “enableQuickAddForContent”.</li>
+
+	  <br>
+
 	  <p><b><a href="https://www.youtube.com/watch?v=_Ssyds9t0Do" target="_blank" rel="noopener noreferrer">1.0.3492</a> (2025-08-13)</b></p>
 		<p><b><a href="https://support.documoto.com/hc/en-us/articles/43758222155667-How-to-Create-a-3D-Parts-Page" target="_blank" rel="noopener noreferrer">NEW MAJOR FEATURE: 3D Illustrations – Early Access</a></b></p>
 		<li>The first release of 3D Illustrations in Documoto delivers an end-to-end workflow for bringing interactive 3D CAD models into your parts pages. This release enables Publishers to import 3D models, map them to BOMs, and publish 3D-enabled pages, while Library users can explore assemblies interactively.</li>
