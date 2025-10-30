@@ -4,6 +4,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+	  <p><b>1.0.3539</b> (2025-10-29)</p>
+	  
+      <p><b><a href="https://support.documoto.com/knowledge-base/documoto-language-support" target="_blank" rel="noopener noreferrer">NEW MAJOR UPDATE: Translations – True Region-Code Support</a></b></p>
+		<li>→ Documoto now fully aligns with ISO 639-3 and ISO 3166-1 standards for locale codes, correcting existing mappings (e.g., Norwegian “nn_NO” → “no-NO”, Serbian “sr_SP” → “sr-RS”) and adding new locales such as “en-GB”, “es-MX”, and “pt-BR”.</li>
+		<li>→ The Library now features a region-aware language selector with flag icons and updated locale names, while both the Library and Admin Center use consistent locale ordering and smarter fallback logic to display the most relevant translations.</li>
+		<li>→ XML imports and exports, printing, and REST APIs have been updated to process extended locale codes.</li>
+	  
+	  <p><b>Library Updates:</b></p>
+		<li><b>Contextual Search – Media Category Grouping:</b> Search suggestions are now grouped by Media Categories, making it easier to identify relevant results at a glance.</li>
+		<li>→ New Admin Center setting: Enable Grouping by Media Categories in Contextual Search (default disabled).</li>
+		<li>→ When enabled, results display groups for Product Pages, Parts, Pages, and each Media Category (up to 10).</li>
+		<li>→ Library Search Page adds a new “Media” Type filter combining all media types.</li>
+		<li>→ Mobile behavior, filter logic, and ordering follow existing Search Settings and tenant preferences.</li>
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Increased 3D Illustration File Size Limit:</b> Publishers can now upload 3D model files up to 100 MB, enabling use of higher-fidelity assets without hitting upload limits.</li>
+		<p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>Headless Publisher – Delete Media Endpoint:</b> New endpoint allows publishers to delete media entries via API, supporting better content lifecycle management and automated cleanup workflows.</li>
+		<li><b>Headless Storefront – GET Orders List (Search):</b> New endpoint allows Storefront Admins to query and fetch lists of existing orders using filters and pagination for reporting and operational visibility across tenants or organizations.</li>
+		<li><b>Headless Publisher – GET Media Info Enhancements:</b> The endpoint now includes new response fields: “openInNewBrowserWindow”, “mediaFile”, “entryOptions” – providing richer metadata for media integrations.</li>
+		<li><b>Headless Library – Retrieve Media Files Enhancement:</b> The endpoint now supports returning ZIP archives for “microsite” media types, enabling easier programmatic downloads and external integration.</li> Collapse	
+	  
 	  <p><b>1.0.3511</b> (2025-09-04)</p>
 
 	  <p><b><a href="https://support.documoto.com/knowledge-base/how-to-use-ai-powered-search" target="_blank" rel="noopener noreferrer">NEW MAJOR FEATURE: AI-Powered Search for PDFs in the Documoto Library – Early Access</a></b></p>
