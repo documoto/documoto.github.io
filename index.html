@@ -4,6 +4,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+	  <p><b>1.0.3555</b> (2025-12-03)</p>
+
+	  <p><b>Storefront Updates:</b></p>
+		<li><b><a href="https://support.documoto.com/knowledge-base/address-validator-considerations" target="_blank" rel="noopener noreferrer">New “Address Validator” feature:</a></b> Google-powered validation and suggestions for editable addresses on Purchase Order or Request for Quote submission. Add/Edit Address modal Line 1 uses Suggestions for autocomplete.</li>
+		<li><b>Resolved PO date picker position:</b> Calendar now opens next to the edited field (enterprise-4265).</li>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b><a href="https://support.documoto.com/knowledge-base/how-to-create-order-suggestions" target="_blank" rel="noopener noreferrer">New “Add to Cart” modal: Suggestions feature</a></b></li>
+		<li>→ From a Parts Page BOM row, add complementary Suggestions in the same step.</li>
+		<li>→ Respects visibility/orderability; governed by Enable Order Suggestions. Works in Widgets.</li>
+		<li><b>Tenant Option: Exclude Parts from Access Control Rules</b></li>
+		<li>→ New toggle in Admin → System → Tenant Settings to make all non-deleted Parts visible/searchable to all users (Media/Pages continue to enforce access controls).</li>
+		<li>→ Applies immediately; no reindex required.</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Resolved issue for Browse Flow override list (500+):</b> All flows now appear in the org-level override dropdown (enterprise-4631).</li>
+
+	  <p><b>Reporting Updates:</b></p>
+		<li><b>Resolved issue for Page Part Tag Report: locale filter removed from the report parameters page to avoid users confusion caused by particular locales translations missing for the content (enterprise-4648).</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>New Headless Library “Where Used” endpoints</b></li>
+		<li>→ <b>GET /library/pages/v1/{id}/where-used:</b> Returns books that include the specified page (filters, pagination, sorting, access-controlled).</li>
+		<li>→ <b>GET /library/parts/v1/{id}/where-used:</b> Returns books and pages that reference the specified part (filters, pagination, sorting, access-controlled).</li>
+		<li><b>New Headless Admin “User” endpoints</b></li>
+		<li>→ <b>GET /admin/user/users/v1/{user-id}:</b> Returns detailed user information.</li>
+		<li>→ <b>DELETE /admin/user/users/v1/{user-id}:</b> Deletes an existing tenant user.</li>
+
+	  <br>
+	  
 	  <p><b>1.0.3539</b> (2025-10-29)</p>
 	  
       <p><b><a href="https://support.documoto.com/knowledge-base/documoto-language-support" target="_blank" rel="noopener noreferrer">NEW MAJOR UPDATE: Translations – True Region-Code Support</a></b></p>
