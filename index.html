@@ -4,7 +4,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+	  
+	  <p><b><a href="https://www.youtube.com/watch?v=NqVdmyR_j7c" target="_blank" rel="noopener noreferrer">1.0.3621</a></b> (2026-02-11)</p>
 
+	  <p><b><a href="https://support.documoto.com/knowledge-base/how-to-navigate-and-search-within-a-book" target="_blank" rel="noopener noreferrer">MAJOR UPDATE: Viewer BOM and TOC Enhancements</a></b></p>
+		<li>The Book Viewer TOC is now open by default initially and, on desktop, is displayed in its own dedicated panel beside the content viewer, eliminating overlap with the book content. TOC search has been refined to filter the list to matching pages only and provide clearer match context—while keeping the current viewer state unchanged until a result is selected.</li>
+		<li>BOM search has been improved so that only matching part rows remain visible when filtering, making results easier to scan and act on. Clicking a TOC search result still carries the context into the Book Viewer, now also highlighting text for document matches. Both TOC and BOM now support debounced search-as-you-type for faster, more fluid discovery.</li>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Custom “No results found” help text (General Search):</b> When global search returns zero results, the contextual search modal shows a “No results found” message that can be customized via Admin Center → Library → Labels.</li>
+		<li><b>Feedback icons more visible in AI chatbot in Document Viewer:</b> Thumbs up/down icons are now larger and use the tenant/org primary color to make feedback easier to find.</li>
+		<li><b>Fixed issue:</b> Clicking next to the “Show only Exact Matches” control in Library Search could toggle the checkbox unintentionally (enterprise-4590).</li>
+		<li><b>Fixed issue:</b> Book search pagination didn’t allow access to all result pages (enterprise-4658).</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Part Creator defaults updated:</b> In the Part Creator UI, Orderable and Visible now default to true for newly created parts.</li>
+		<li><b>Job Manager: Import type filter:</b> Job Manager now includes an Import job type so bulk import jobs can be filtered separately from export and publishing activity.</li>
+
+	  <p><b>REST API Updates:</b></p>
+		<li>→ <b>New Headless Admin GET Users List (Search):</b> GET /admin/user/users/v1/search endpoint returns a paginated list of users matching query parameters.</li>
+		<li>→ <b>Enhanced Library Admin GET Book TOC:</b> GET /library/media/v1/{id}/tocs endpoint now includes “hasSecondaryPages” for TOC items of type “page” to indicate whether secondary pages exist.</li>
+
+	  <br>
+	  
 	  <p><b><a href="https://www.youtube.com/watch?v=UwOA9KO4Q-Q" target="_blank" rel="noopener noreferrer">1.0.3581</a></b> (2026-01-07)</p>
 	
 	  <p><b>Storefront Updates:</b></p>
