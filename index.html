@@ -4,6 +4,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css" integrity="sha512-ADrqa2PY1TZtb/MoLZIZu/Z/LlPaWQeDMBV73EMwjGam43/JJ5fqW38Rq8LJOVGCDfrJeOMS3Q/wRUVzW5DkjQ==" crossorigin="anonymous" />
   </head>
   <body>
+
+	  <p><b><a href="https://www.youtube.com/watch?v=G3BcSat0AFU" target="_blank" rel="noopener noreferrer">1.0.3635</a></b> (2026-03-04)</p>
+
+	  <p><b>Storefront Updates</b></p>
+		<li><b><a href="https://support.documoto.com/knowledge-base/how-to-create-and-manage-order-attachments" target="_blank" rel="noopener noreferrer">Attachments for PO/RFQ Orders and Quotes:</a></b> Storefront users can now attach supporting files when creating a Purchase Order (PO) or Request for Quote (RFQ), and add, replace, or delete attachments when updating order/quote status (based on permissions).</li>
+		<li>→ Attachments are delivered alongside the standard order/quote PDF in notification emails.</li>
+		<li>→ Email recipients receive an <b>“Attachments Download Links”</b> section with secure links (expire after 30 days).</li>
+		<li>→ Attachments are visible per entry in the Order History modal and can be downloaded.</li>
+		<li><b>Resolved:</b> Changes to list box fields were correctly saved and shown in the PDF attachment but not reflected in the email body upon re-submission. Order/Quote emails now display the updated field values (enterprise-4711).</li>
+
+	  <p><b>Admin Center Updates</b></p>
+		<li><b><a href="https://support.documoto.com/knowledge-base/how-to-force-user-login-via-sso" target="_blank" rel="noopener noreferrer">User Group Setting: Disable Username/Password Login (SSO-Only Enforcement):</a></b> Organization Admins can now disable standard username/password login at the User Group level.</li>
+		<li>→ When enabled, affected users must authenticate via SSO.</li>
+		<li>→ Username/password attempts (including direct URL credentials) are blocked.</li>
+		<li>→ If a user belongs to multiple groups, the most restrictive rule applies.</li>
+		<li><b>Resolved:</b> Active Admin Banner was obscuring the collapse control in Page Builder Part Details drawer (enterprise-4721).</li>
+		<li><b>Resolved:</b> Some print jobs could fail unexpectedly (often requiring users to re-run the print). This update improves printer job stability and reduces intermittent failures that were causing some print jobs to error out instead of completing successfully (enterprise-4725).</li>
+
+	  <p><b>REST API Updates</b></p>
+		<li><b>NEW Headless Publisher – Create Media Endpoint:</b> <b>POST /publisher/media/v1</b> allows publishers to programmatically create media entries (books, documents, images, videos, externals, microsites).</li>
+
+	  <p><b>Maintenance</b></p>
+		<li>Updated system translations.</li>
+	  
+	  <br>
 	  
 	  <p><b>1.0.3621.1</b> (2026-02-17)</p>
 		<li><b>Fixed issue:</b> Resolved an issue where modifying and republishing a page in Page Builder could cause hotpoint links to duplicate on each publish cycle (enterprise-4738).</li>
