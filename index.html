@@ -5,6 +5,30 @@
   </head>
   <body>
 
+	  <p><b><a href="https://www.youtube.com/watch?v=BSpgFbr1bRo" target="_blank" rel="noopener noreferrer">1.0.3664</a></b> (2026-04-22)</p>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Copy Part Number from Library:</b> Users can now quickly copy a part number to their clipboard from key Library locations.</li>
+		<li>→ Available in Part Item Details, Part Info Preview, and the Page Viewer BOM.</li>
+		<li>→ Copies the exact displayed part number and shows a confirmation toast.</li>
+		<li><b>Show/Hide Password Toggle Across Password Fields:</b> Password fields across Documoto now include a show/hide toggle to make password entry easier and reduce typing errors.</li>
+		<li>→ Available on the Login page, Password Reset flow, Account Preferences, and Admin User / Update Password modals.</li>
+		<li>→ Revealed passwords automatically re-mask after a short interval.</li>
+		<li><b>Resolved issue:</b> Microsites opened in widgets could fail to load their CSS and JavaScript correctly. Microsites now render in widgets more consistently with how they appear in the Documoto Library (enterprise-4796).</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Resolved issue:</b> List box tag value sets could sort inconsistently between Tags Manager and content tagging workflows. Tag value ordering is now applied more consistently across Admin experiences (enterprise-4320).</li>
+		<li><b>Resolved issue:</b> SmartEquip exports could omit chapters that contained only sub-chapters with pages, resulting in incomplete XML output. Books with nested chapter structures now export more reliably (enterprise-4816).</li>
+
+	  <p><b>Storefront Updates:</b></p>
+		<li><b>Resolved issue:</b> Order attachments were not always visible to authorized users in related organizations. Attachments now display more consistently for users with the appropriate Order Management permissions (enterprise-4788).</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>NEW Headless Admin: Create User Endpoint:</b> <b>POST /admin/user/users/v1/</b> creates a new tenant user with support for organization assignment, user groups, tags, phone fields, and optional verification workflows.</li>
+		<li><b>NEW Headless Admin: Update User Endpoint:</b> <b>PUT /admin/user/users/v1/{user-id}</b> updates an existing tenant user, including organization assignment, user groups, tags, phone fields, expiration settings, and verification/password handling.</li>
+
+	  <br>
+
 	  <p><b><a href="https://www.youtube.com/watch?v=svN1ySv3WFw" target="_blank" rel="noopener noreferrer">1.0.3648</a></b> (2026-04-01)</p>
 
 	  <p><b>Library Updates:</b></p>
