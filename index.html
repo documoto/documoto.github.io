@@ -5,6 +5,32 @@
   </head>
   <body>
 
+	  <p><b>1.0.3693</b> (2026-05-20)</p>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Enhanced Hide Pricing Controls:</b> Admins can now configure individual pricing fields to be hidden by default, giving organizations more control over how pricing is displayed to users.</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Parts Bulk Import - Thumbnail Support:</b> Parts Bulk Import now supports assigning thumbnails during import.</li>
+
+ 		<p><b>Storefront Updates:</b></p>
+		<li><b>Submitted Orders Preserve Original Parts List:</b> Submitted orders now retain the parts list as it existed when the order was placed, even if parts are later superseded, deleted, or affected by access control changes.</li>
+		<li><b>Resolved issue:</b> Users could not successfully edit item quantities in the cart when Part Location Data was enabled. Quantity changes now save as expected instead of reverting to the originally submitted amount (enterprise-4848).</li>
+
+	  <p><b>Reporting Updates:</b></p>
+		<li><b><a href="https://support.documoto.com/knowledge-base/product-pages-report" target="_blank" rel="noopener noreferrer">NEW Product Pages Report:</a></b> A new report provides detailed information about product pages across your tenant, including assigned media, tags, thumbnail filenames, and more. Filter results by product name, product category, created date, or updated date for more detailed insights.</li>
+		<li><b><a href="https://support.documoto.com/knowledge-base/product-pages-access-controls-report" target="_blank" rel="noopener noreferrer">NEW Product Pages Access Controls Report:</a></b> A new report provides visibility into access control settings for product pages across your tenant. Filter results by product category, created date, updated date, organization, or user group for more detailed insights.</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>NEW Headless Publisher Product Category Endpoints</b></li>
+		<li>→ <b>GET /publisher/product-categories/v1/{id}/info:</b> Returns a Product Category by internal ID, including all translations.</li>
+		<li>→ <b>GET /publisher/product-categories/v1/search:</b> Returns a paginated list of Product Categories with filtering, sorting, and translation data.</li>
+		<li>→ <b>POST /publisher/product-categories/v1:</b> Creates a new Product Category.</li>
+		<li>→ <b>PUT /publisher/product-categories/v1/{id}:</b> Updates an existing Product Category.</li>
+		<li>→ <b>DELETE /publisher/product-categories/v1/{id}:</b> Deletes a Product Category when it is not assigned to any Product Pages.</li>
+
+	  <br>
+
 	  <p><b><a href="https://www.youtube.com/watch?v=BSpgFbr1bRo" target="_blank" rel="noopener noreferrer">1.0.3664</a></b> (2026-04-22)</p>
 
 	  <p><b>Library Updates:</b></p>
