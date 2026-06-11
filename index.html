@@ -5,6 +5,35 @@
   </head>
   <body>
 
+	  <p><b><a href="https://www.youtube.com/watch?v=u1z2xjzuC4g" target="_blank" rel="noopener noreferrer">1.0.3707</a></b> (2026-06-10)</p>
+
+	  <p><b><a href="https://support.documoto.com/knowledge-base/how-to-create-and-manage-part-collections" target="_blank" rel="noopener noreferrer">MAJOR UPDATE: Part Collections in Product Pages</a></b></p>
+		<li>Product Pages now support Part Collections, allowing admins to assign existing Parts Pages to a Product Page and present them as product-specific parts lists in the Library.</li>
+		<li>→ Admins can add, remove, and reorder up to 20 Part Collections from the Product Page Editor.</li>
+		<li>→ Library users can view assigned Part Collections as searchable parts lists, add individual parts or all parts to the cart, and export collections to XLSX.</li>
+		<li>→ Part Collections are supported in desktop, mobile, and Library Widget experiences.</li>
+		<li>→ Tenant Admins can customize the “Part Collection” label from Admin Center → Library → Labels.</li>
+		<li>→ Parts included in accessible Product Page Part Collections can be discovered and used through search, Quick Add, Part Details, Cart, Saved/Shared Carts, and order submission.</li>
+		<li>→ Part Details Where Used now includes Product Pages when a part appears in Product Page Part Collections.</li>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Resolved issue:</b> Browse Flow nodes using faceted tag criteria could return broader results than expected. Browse Flow filtering now applies faceted tag criteria correctly, returning only the intended media results (enterprise-4887).</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>NEW Headless Publisher Product Page Endpoints</b></li>
+		<li>→ <b>GET /publisher/product-pages/v1/{id}/info</b> returns a Product Page by internal ID, including all translations.</li>
+		<li>→ <b>GET /publisher/product-pages/v1/search</b> returns a paginated list of Product Pages with filtering, sorting, tag filters, and translation data.</li>
+		<li>→ <b>POST /publisher/product-pages/v1</b> creates a new Product Page.</li>
+		<li>→ <b>PUT /publisher/product-pages/v1/{id}</b> updates an existing Product Page.</li>
+		<li>→ <b>DELETE /publisher/product-pages/v1/{id}</b> deletes a Product Page.</li>
+
+		<li><b>NEW Headless Publisher Product Page Media Assignment Endpoints</b></li>
+		<li>→ <b>GET /publisher/product-pages/v1/{id}/assign-media</b> returns media assigned to a Product Page.</li>
+		<li>→ <b>POST /publisher/product-pages/v1/{id}/assign-media</b> assigns one or more media records to a Product Page.</li>
+		<li>→ <b>DELETE /publisher/product-pages/v1/{id}/assign-media</b> removes one or more assigned media records from a Product Page.</li>
+
+	  <br>
+
 	  <p><b>1.0.3693</b> (2026-05-20)</p>
 
 	  <p><b>Library Updates:</b></p>
