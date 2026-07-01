@@ -5,6 +5,39 @@
   </head>
   <body>
 
+	  <p><b><a href="https://www.youtube.com/watch?v=xKtKa6AQOUk" target="_blank" rel="noopener noreferrer">1.0.3717</a></b> (2026-06-30)</p>
+
+	  <p><b>MAJOR UPDATE: Product Page Widget</b></p>
+		<li>A new Product Page Widget allows integrators to embed a standalone Product Page experience directly in external websites, without requiring users to navigate through the broader Library Widget.</li>
+		<li>→ The widget opens directly to the configured Product Page and honors existing Product Page access controls.</li>
+		<li>→ Product Page cards such as Info, Details, Related, Attachments, Comments, and Part Collections are supported.</li>
+		<li>→ Find updated Documoto Widgets Implementation Guide for Developers <a href="https://support.documoto.com/knowledge-base/how-to-embed-documoto-content-using-widgets" target="_blank" rel="noopener noreferrer">here.</a></li>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Improved Book Navigation: Remember Chapter Scroll Position:</b> When users navigate from a book chapter’s tiled page list into a page and then return using the browser Back button, Documoto now restores the prior chapter scroll position so users can continue from where they left off.</li>
+		<li><b>Search Results Information Modal Enhancements:</b> The part Information modal in Library Search Results now includes applicable pricing and ERP-provided details, such as ETA and Availability, following the same display rules used on the Part Details page.</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Text Tag Value Editor: Add Multiple Values at Once:</b> Admins can now add multiple text tag values at once by entering semicolon-separated values in the Tag Value Editor. This makes it faster to manage large text-based tag sets such as serial numbers, unit numbers, and other identifiers.</li>
+		<li><b>New User Setup: Redirect to User Groups After Save:</b> After creating a new user, admins are now redirected directly to that user’s User Groups page, helping ensure Organization Admins complete this required access assignment step during user setup.</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>NEW Headless Publisher Product Page Tag Endpoints</b></li>
+		<li>→ <b>GET /publisher/product-pages/v1/{id}/tags</b> returns tags assigned to a Product Page.</li>
+		<li>→ <b>POST /publisher/product-pages/v1/{id}/tags</b> adds one or more tags to a Product Page.</li>
+		<li>→ <b>DELETE /publisher/product-pages/v1/{id}/tags</b> removes one or more tags from a Product Page.</li>
+		<li><b>REST Organization Endpoint Enhancement</b></li>
+		<li>→ <b>GET /organization/v1</b> now returns internal organization IDs in the response and supports lookup by organization ID using the optional <b>id</b> query parameter.</li>
+		<li><b>REST User Group Endpoint Enhancement</b></li>
+		<li>→ <b>GET /user-group/v1</b> now returns internal user group IDs in the response and supports lookup by user group ID using the optional <b>id</b> query parameter.</li>
+
+	  <p><b>3D Experience Transition Updates:</b></p>
+		<li>Legacy <b>TechSoft-based 3D features</b> are being removed from Documoto Library, Widgets, and Admin Center workflows as part of our 3D platform transition.</li>
+		<li>A new <b>CADShare-powered 3D experience</b> is coming soon and will provide a more modern foundation for viewing and interacting with 3D content in Documoto.</li>
+		<li>Please contact your Customer Success Manager for additional details about this transition.</li>
+
+	  <br>
+	  
 	  <p><b><a href="https://www.youtube.com/watch?v=u1z2xjzuC4g" target="_blank" rel="noopener noreferrer">1.0.3707</a></b> (2026-06-10)</p>
 
 	  <p><b><a href="https://support.documoto.com/knowledge-base/how-to-create-and-manage-part-collections" target="_blank" rel="noopener noreferrer">MAJOR UPDATE: Part Collections in Product Pages</a></b></p>
