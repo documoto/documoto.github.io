@@ -5,6 +5,41 @@
   </head>
   <body>
 
+	  <p><b><a href="https://www.youtube.com/watch?v=gjHoWXzBv8M" target="_blank" rel="noopener noreferrer">1.0.3749</a></b> (2026-08-05)</p>
+
+	  <p><b><a href="https://support.documoto.com/knowledge-base/doculift-getting-started-guide" target="_blank" rel="noopener noreferrer">MAJOR UPDATE: Introducing DocuLift – AI-Powered PDF Import (Early Access)</a></b></p>
+		<li>DocuLift introduces a new AI-assisted workflow that helps Publishers transform PDF parts manuals into Documoto content with significantly less manual effort.</li>
+		<li>→ Import PDF manuals and automatically extract page BOMs and illustrations into a guided review experience.</li>
+		<li>→ Review and edit extracted pages, BOMs, illustrations, and page metadata within a given PDF Import prior to publishing Parts Pages.</li>
+		<li>→ Track imports from a dedicated Import Manager and monitor processing or publishing status.</li>
+		<li>→ View the publishing history for each PDF Import, including previous publish operations and their status.</li>
+		<li>→ During Early Access, DocuLift includes up to 200 imported PDF pages as a “Try it yourself” free tier.</li>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Auto-open Part Thumbnail Preview:</b> Selecting a BOM row or hotpoint in the Library or Page Widget now automatically opens the part’s 2D thumbnail preview. Admins can disable this behavior through the <b>“Auto-open Part Thumbnail Preview”</b> Library setting; users can still open thumbnails manually when it is disabled.</li>
+		<li><b>Improved Widget Error Handling:</b> Widgets no longer display a blank screen when configured with invalid or inaccessible content. Widgets now display <b>“Content Not Found”</b> when their configured root content cannot be resolved, while the Library Widget falls back to its Home page when its initial target cannot be opened.</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Page Builder Enhancements</b></li>
+		<li>→ <b>White Shape Drawing Border:</b> Added White as a preset and default border color in the Shape Drawing tool for faster illustration editing.</li>
+		<li>→ <b>Collapsible Hotpoints BOM Columns:</b> Publishers can now hide or show the Part Number and Name columns to maximize illustration workspace.</li>
+		<li>→ <b>Keyboard Save Shortcut:</b> Ctrl+S on Windows or Linux and Cmd+S on Mac now save changes from the BOM, Illustrations, and Hotpoints tabs.</li>
+		<li>→ <b>Cleaner Validation Messages:</b> Removed warnings for missing optional BOM item translation descriptions, making validation results easier to review.</li>
+		<li>→ <b>Improved Manual Hotpointing:</b> Resolved an issue where selecting item numbers containing 0 by keyboard could unexpectedly reset the illustration zoom.</li>
+		<li><b>Part Collection Cleanup During Page Deletion:</b> When a Parts Page used as a Part Collection is deleted, it is now automatically removed from every affected Product Page. The deletion confirmation identifies how many Product Pages will be affected.</li>
+		<li><b>Copy Product Pages with Part Collections:</b> Copying a Product Page now also copies its assigned Part Collections and preserves their display order.</li>
+		<li><b>Resolved issue:</b> Admins could not create or update file-backed Document, Image, or Video Media when the filename exceeded 100 characters. Filenames of up to 255 characters are now supported (enterprise-4943).</li>
+		<li><b>Resolved issue:</b> Processing hotpoint links in a publishing edge case could cause the publishing operation to fail (enterprise-5013).</li>
+
+	  <p><b>Reporting Updates:</b></p>
+		<li><b>Page Report HashKey Support:</b> The Page Report spreadsheet output now includes a <b>HashKey</b> column for each Page.</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>NEW Headless Publisher Part Thumbnail Endpoint</b></li>
+		<li>→ <b>Add or Replace Part Thumbnail:</b> <b>POST /publisher/parts/v1/{id}/thumbnails</b> uploads a JPEG, PNG, or GIF thumbnail to an existing Part and replaces any current thumbnail.</li>
+
+	  <br>
+	  
 	  <p><b><a href="https://www.youtube.com/watch?v=xKtKa6AQOUk" target="_blank" rel="noopener noreferrer">1.0.3717</a></b> (2026-06-30)</p>
 
 	  <p><b>MAJOR UPDATE: Product Page Widget</b></p>
