@@ -5,6 +5,43 @@
   </head>
   <body>
 
+	  <p><b><a href="https://www.youtube.com/watch?v=KazvPjHYHzc" target="_blank" rel="noopener noreferrer">1.0.3760</a></b> (2026-08-27)</p>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Part Collection Thumbnail Preview:</b> Users can now click a custom part thumbnail in a Product Page Part Collection to open the larger image preview with zoom controls, without navigating away to Part Details. This enhancement is also supported in Product Page Widget experiences on desktop/tablet.</li>
+		<li><b>Improved Search and AI Input Visibility:</b> Search fields and the Document Viewer AI question input now use higher-contrast placeholder text and more visible borders, making search and question-entry areas easier to identify across the Library.</li>
+		<li><b>Resolved issue:</b> TOC search suggestions remained open after users clicked elsewhere in the Table of Contents. Suggestions now close as expected when focus moves outside the search field (enterprise-4976).</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b><a href="https://support.documoto.com/knowledge-base/how-to-create-or-update-product-pages-in-bulk" target="_blank" rel="noopener noreferrer">Product Page Bulk Import – Part Collections Support:</a></b> Product Page Bulk Import now supports assigning Part Collections through the XLSX template using Parts Page <b>HashKeys</b>.</li>
+		<li>→ A new <b>Part Collections</b> column supports multiple ordered assignments using pipe-separated HashKeys.</li>
+		<li>→ A new <b>Overwrite part collections</b> option lets Publishers choose whether imported collections extend or replace existing assignments.</li>
+		<li>→ Import processing validates eligible Parts Pages, preserves collection order, enforces the 20-collection limit, and reports invalid assignments through Job Manager and the Unprocessed Rows Spreadsheet.</li>
+		<li><b>NEW Minimum Password Length Setting:</b> Tenant Admins can now configure a tenant-wide minimum password length under <b>System Settings → User Settings</b>. The system default remains 8 characters, and the configured minimum applies whenever passwords are created or changed while preserving existing password complexity requirements.</li>
+		<li><b>DocuLift – Improved Complex BOM Extraction:</b> DocuLift has been enhanced to better extract BOM data from complex PDF layouts, including pages with multiple BOM sections, multi-level headers, dense tables, multiline content, and unrelated tabular information.</li>
+		<li><b>Resolved issue:</b> Intermittent publishing failures could happen when multiple DocuLift pages containing the same new Part were published together. Multi-page publishing now handles concurrent Part creation more reliably, helping prevent duplicate Part creation and inconsistent page-level publishing results (enterprise-5072).</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+
+		<li><b>NEW Headless Publisher Product Page Access Control Endpoints – Organizations</b></li>
+		<li>→ <b>Get Organizations:</b> <b>GET /publisher/product-pages/v1/{id}/access-controls/organizations</b> returns Organizations assigned as Product Page access controls.</li>
+		<li>→ <b>Add Organizations:</b> <b>POST /publisher/product-pages/v1/{id}/access-controls/organizations</b> assigns one or more Organizations to a Product Page.</li>
+		<li>→ <b>Remove Organizations:</b> <b>DELETE /publisher/product-pages/v1/{id}/access-controls/organizations</b> removes one or more Organization access assignments from a Product Page.</li>
+		<li><b>NEW Headless Publisher Product Page Access Control Endpoints – User Groups</b></li>
+		<li>→ <b>Get User Groups:</b> <b>GET /publisher/product-pages/v1/{id}/access-controls/user-groups</b> returns Standard and Widget User Groups assigned as Product Page access controls.</li>
+		<li>→ <b>Add User Groups:</b> <b>POST /publisher/product-pages/v1/{id}/access-controls/user-groups</b> assigns one or more User Groups to a Product Page.</li>
+		<li>→ <b>Remove User Groups:</b> <b>DELETE /publisher/product-pages/v1/{id}/access-controls/user-groups</b> removes one or more User Group access assignments from a Product Page.</li>
+		<li><b>NEW Headless Library Product Page Endpoints</b></li>
+		<li>→ <b>Get Product Page by ID:</b> <b>GET /library/product-pages/v1/{id}</b> returns an accessible Product Page by internal ID, including Library-facing product information, counts, and locale-aware translation data.</li>
+		<li>→ <b>Get Product Page Thumbnail:</b> <b>GET /library/product-pages/v1/{id}/thumbnails</b> returns the thumbnail for an accessible Product Page.</li>
+		<li><b>Headless Library Part Where Used Enhancement</b></li>
+		<li>→ <b>GET /library/parts/v1/{id}/where-used</b> now includes accessible Product Pages when the part is used through their Part Collections, providing Product Page details, URL, and thumbnail URL alongside existing where-used results.</li>
+
+	  <p><b>Maintenance:</b></p>
+		<li>System translations updated.</li>
+
+	  <br>
+	  
 	  <p><b><a href="https://www.youtube.com/watch?v=gjHoWXzBv8M" target="_blank" rel="noopener noreferrer">1.0.3749</a></b> (2026-08-05)</p>
 
 	  <p><b><a href="https://support.documoto.com/knowledge-base/doculift-getting-started-guide" target="_blank" rel="noopener noreferrer">MAJOR UPDATE: Introducing DocuLift – AI-Powered PDF Import (Early Access)</a></b></p>
