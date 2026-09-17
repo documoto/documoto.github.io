@@ -5,6 +5,36 @@
   </head>
   <body>
 
+	  <p><b>1.0.3768</b> (2026-09-16)</p>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Resolved issue:</b> Characters entered quickly into text-based range filters could disappear while search results were updating. Filter input now retains values as entered (enterprise-4978).</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Related Media Ordering:</b> Content Admins can now control the display order of Media related to <b>Parts, Pages, Chapters, and Product Pages</b> using drag-and-drop or Move to Top/Bottom actions. The configured order is reflected in the Related card in the Library and Widgets. <b>Note:</b> Ordering for <b>Media-to-Media relationships</b> is planned for the next release.</li>
+		<li><b>DocuLift – Duplicate PDF Pages:</b> Publishers can now duplicate one or multiple extracted PDF pages when a source page needs to become more than one Parts Page.</li>
+		<li>→ Copies are created from the source page’s original extracted BOM, illustrations, and page data rather than from subsequent edits.</li>
+		<li>→ Original and copied pages can then be edited and published independently as separate Parts Pages.</li>
+		<li><b>DocuLift – Remember Import Settings:</b> The New DocuLift Import workflow can now remember reusable import configuration in the current browser and prepopulate it for subsequent imports, reducing repeated setup for related PDFs. Remembered settings can be updated or cleared when submitting a later import.</li>
+		<li><b>Resolved issue:</b> DocuLift imports could fail in tenants containing Part Number Codes that differed only by capitalization. Imports now resolve these duplicate case-insensitive matches consistently and continue processing (enterprise-5098).</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>NEW Headless Publisher Product Page Part Collection Endpoints</b></li>
+		<li>→ <b>Get Part Collections:</b> <b>GET /publisher/product-pages/v1/{id}/part-collections</b> returns Part Collections assigned to a Product Page in display order.</li>
+		<li>→ <b>Add Part Collections:</b> <b>POST /publisher/product-pages/v1/{id}/part-collections</b> assigns one or more Parts Pages as Part Collections, with support for defining their display order.</li>
+		<li>→ <b>Delete Part Collections:</b> <b>DELETE /publisher/product-pages/v1/{id}/part-collections</b> removes one or more assigned Part Collections and recalculates the remaining display order.</li>
+		<li><b>NEW Headless Library Chapter Thumbnail Endpoint</b></li>
+		<li>→ <b>GET /library/chapters/v1/{id}/thumbnails</b> returns the thumbnail for an accessible top-level or nested Chapter.</li>
+		<li><b>Headless Admin User Password Validation Enhancement</b></li>
+		<li>→ <b>POST /admin/user/users/v1</b> and <b>PUT /admin/user/users/v1/{id}</b> now honor the tenant-configured Minimum Password Length when a password is supplied, keeping API-created and API-updated users consistent with Admin Center password requirements.</li>
+		<li><b>MDZ Export Support Expanded to Static Media:</b> The existing asynchronous Media Export REST workflow now supports exporting Document, Image, and Video Media as Documoto <b>.mdz</b> archives, in addition to existing Book exports.</li>
+		<li>→ <b>Start Export:</b> <b>GET /media/export-async/v1/{identifier}</b></li>
+		<li>→ <b>Check Export Status:</b> <b>GET /media/export-async-poll/v1/{requestId}</b></li>
+		<li>→ <b>Download Export:</b> <b>GET /media/export-async-result/v1/{requestId}</b></li>
+		<li>Existing permissions and export restrictions continue to apply.</li>
+	  	  
+	  <br>
+	  
 	  <p><b><a href="https://www.youtube.com/watch?v=KazvPjHYHzc" target="_blank" rel="noopener noreferrer">1.0.3760</a></b> (2026-08-27)</p>
 
 	  <p><b>Library Updates:</b></p>
