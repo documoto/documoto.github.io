@@ -5,6 +5,42 @@
   </head>
   <body>
 
+	  <p><b>1.0.3783</b> (2026-10-07)</p>
+
+	  <p><b><a href="https://www.youtube.com/watch?v=hWdWB_CQFO8" target="_blank" rel="noopener noreferrer">Watch Overview Video</a></b></p>
+
+	  <p><b>MAJOR UPDATE: New Admin Dashboard Experience</b></p>
+		<li>The Admin Dashboard now supports customer-specific dashboard content generated nightly, providing Admin users with a more tailored view of their Documoto environment.</li>
+		<li>→ Generated dashboard content is automatically displayed when available for the tenant.</li>
+		<li>→ The same customer-specific dashboard is available to all users with Admin Center access.</li>
+		<li>→ If generated dashboard content is not yet available, Documoto automatically displays the existing Dashboard experience instead.</li>
+
+	  <p><b>Library Updates:</b></p>
+		<li><b>Resolved issue:</b> The item number could become difficult or impossible to see when a BOM row was selected because it did not use the same selected-state text styling as the other row fields. Item numbers now remain visible when BOM rows are selected (enterprise-5101).</li>
+
+	  <p><b>Admin Center Updates:</b></p>
+		<li><b>Related Media Ordering – Media-to-Media Relationships:</b> Content Admins can now control the display order of Media related to another Media record. Each Media record maintains its own Related Media order, and the configured order is reflected in Library and Widgets.</li>
+		<li><b>Resolved issue:</b> The redundant <b>Lookup/Load Parts from Documoto Import</b> option has been removed from the Import Parts workflow in Page Builder. Part lookup remains enabled during BOM imports (enterprise-5061).</li>
+		<li><b>Resolved issue:</b> Repositioned hotpoints in Page Builder could intermittently fail to save correctly, resulting in lost positions, duplicated hotpoints, or removed hotpoints. Updated hotpoint positions are now persisted as expected (enterprise-5109).</li>
+		<li><b>Resolved issue:</b> Dragging and dropping multiple Chapters selected using Shift in the Media TOC could incorrectly move or copy a mixture of selected Chapters and their child content. Multi-selected Chapters are now handled correctly during drag-and-drop operations (enterprise-2609).</li>
+		<li><b>Resolved issue:</b> Product Page Widgets could fail to load when the configured Product Page identifier contained a forward slash (/). Widgets now support valid Product Page identifiers containing forward slashes (enterprise-5106).</li>
+		<li><b>Resolved Publishing Job Handling issues:</b> Page publishing now handles missing pages drafts, deleted target pages, and already-completed scheduler jobs more reliably, preventing affected jobs from continuing to retry unnecessarily and allowing other publishing jobs to continue processing (enterprise-5117, enterprise-5118, enterprise-5119).</li>
+		<li><b>Resolved issue:</b> The embedded Canny Feedback Forum could fail to create posts because the integration was using an outdated private key. The Canny SSO configuration has been updated so authenticated Admin users can access and use the Submit Feedback page without an additional login (enterprise-5162).</li>
+
+		<li><b>DocuLift Updates:</b></li>
+		<li>→ <b>Delete Import:</b> Publishers can now permanently delete DocuLift Imports that are no longer needed. Deletion removes the import's source files, settings, extracted data, illustrations, and publishing history without affecting Parts, Parts Pages, Books, or other content already published from the import. Previously consumed PDF page extraction usage is not restored when an import is deleted.</li>
+		<li>→ <b>Improved Technical Schematic Recognition:</b> DocuLift has been enhanced to more consistently recognize technical schematics and diagrams, including electrical schematics, as illustrations during PDF extraction.</li>
+		<li>→ <b>Resolved issue:</b> Illustrations composed of multiple image elements could be distorted when extracted from some PDFs. DocuLift now preserves the rendered appearance of these illustrations more accurately during extraction (enterprise-5129).</li>
+		<li>→ <b>Resolved issue:</b> DocuLift did not extract illustrations encoded as JPEG2000 from PDF files. JPEG2000 illustrations are now extracted and made available with the applicable candidate pages (enterprise-5102).</li>
+
+	  <p><b>Storefront Updates:</b></p>
+		<li><b>Add to Cart from Microsite Media:</b> Parts submitted from Microsite Media can now be added directly to the Documoto cart using their Part Number and Supplier, provided a Microsite triggers a particular “add to cart” event. After a successful add, the cart refreshes automatically and displays the updated count without requiring the user to leave the Microsite or manually refresh Documoto; users also receive success or failure feedback for each add-to-cart action.</li>
+
+	  <p><b><a href="https://documenter.getpostman.com/view/34649711/2sA3JJAPP7" target="_blank" rel="noopener noreferrer">REST API Updates:</a></b></p>
+		<li><b>Resolved issue: Headless Publisher BOM API:</b> <b>GET /publisher/pages/v1/{id}/boms</b> now returns BOM items when items have a null <b>instanceId</b>, rather than failing the entire request with a conflict response (enterprise-5124).</li>
+
+	  <br>
+	  
 	  <p><b>1.0.3768</b> (2026-09-16)</p>
 
 	  <p><b>Library Updates:</b></p>
